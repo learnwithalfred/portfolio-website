@@ -177,4 +177,8 @@ body {
     font-size: 1.5rem;
     color: #e91683;
   }
+
+  .header-humbugger-icon:hover {
+    color: #e91683;
+  }
 }
