@@ -43,7 +43,7 @@ body {
   }
 
   .developer-info {
-    /* height: 30%; */
+    height: 180px;
     text-align: center;
     position: relative;
   }
@@ -64,7 +64,7 @@ body {
     text-align: center;
     letter-spacing: 0.37px;
     color: #7d73fc;
-    margin: 8px 0;
+    margin: 30px 0 0 0;
   }
 
   .developer-info-title {
@@ -87,7 +87,6 @@ body {
     height: 0;
     left: 0;
     right: 0;
-    top: calc(50% - 0px / 2 + 0.5px);
     border: 1px solid #646369;
     margin: 0 24px;
   }
@@ -157,6 +156,7 @@ body {
     font-size: 20px;
     height: 20px;
     width: 20px;
+    color: white;
   }
 
   .developer-link-work {
@@ -165,6 +165,7 @@ body {
     justify-content: center;
     list-style-type: none;
     height: 32px;
+    cursor: pointer;
   }
 
   .developer-link-work .fa {
@@ -175,6 +176,10 @@ body {
 
   .developer-link-social .fa:hover {
     font-size: 1.5rem;
+    color: #e91683;
+  }
+
+  .header-humbugger-icon:hover {
     color: #e91683;
   }
 }
