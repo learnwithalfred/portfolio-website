@@ -59,16 +59,6 @@ body {
     text-align: center;
   }
 
-  .developer-info-shadow {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    left: -120px;
-    top: 0;
-    background: #edecff;
-    filter: blur(50px);
-  }
-
   .developer-info-name {
     font-weight: 700;
     font-size: 48px;
@@ -143,15 +133,6 @@ body {
     font-weight: 400;
     font-size: 1rem;
     margin-top: 10px;
-  }
-
-  .developer-experience-shadow {
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    left: 120px;
-    background: #edecff;
-    filter: blur(50px);
   }
 
   .developer-hr-bottom {
