@@ -1,0 +1,98 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191765;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 550px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    position: static;
+  }
+
+  .header-logo {
+    width: 81px;
+    top: 14.58px;
+    left: 8.33px;
+    color: white;
+    text-decoration: none;
+    height: 16px;
+  }
+
+  .header-humbugger-icon {
+    width: 33.33px;
+    top: 14.58px;
+    left: 8.33px;
+    color: white;
+  }
+
+  .developer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    color: white;
+    width: 100%;
+  }
+
+  .developer-info {
+    height: 30%;
+    text-align: center;
+    position: relative;
+  }
+
+  .developer-info-shadow {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: -120px;
+    top: 0;
+    background: #edecff;
+    filter: blur(50px);
+  }
+
+  .developer-info-name {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: 0.37px;
+    color: #7d73fc;
+    margin: 12px 0;
+  }
+
+  .developer-info-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #edecff;
+  }
+
+  .developer-about {
+    height: 40%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin: 24px 0;
+    padding: 15px;
+    font-style: normal;
+    line-height: 28px;
+  }
+}
