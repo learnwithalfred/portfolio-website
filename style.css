@@ -38,14 +38,25 @@ body {
   .developer {
     display: flex;
     flex-direction: column;
+    position: relative;
     color: white;
-    width: 100%;
+  }
+
+  .developer::before {
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: -120px;
+    top: 0;
+    background: #edecff;
+    filter: blur(50px);
+    background-image: url(./images/header@2x.png);
   }
 
   .developer-info {
     height: 180px;
     text-align: center;
-    position: relative;
   }
 
   .developer-info-shadow {
@@ -95,6 +106,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    position: relative;
+  }
+
+  .developer-experience::before {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 339px;
+    top: 0;
+    background: #edecff;
+    filter: blur(50px);
+    background-image: url(./images/header@2x.png);
   }
 
   .developer-experience-container {
