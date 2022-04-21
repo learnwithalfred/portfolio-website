@@ -256,14 +256,8 @@ body {
   .card {
     position: relative;
     margin: 24px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 0.1fr 0.1fr;
-    grid-template-areas:
-      'card__image card__image card__image card__image'
-      'projects projects projects projects'
-      'projects__languages-first projects__languages-second projects__languages-third projects__languages-fourth'
-      'projects__btn projects__btn projects__btn projects__btn';
+    display: flex;
+    flex-direction: column;
   }
 
   .card__image {
@@ -275,7 +269,6 @@ body {
   }
 
   .projects {
-    grid-area: projects;
   }
 
   .first__card::before {
@@ -329,13 +322,22 @@ body {
     color: #fff;
     font-weight: 500;
     font-size: 32px;
-    margin: 0 0 24px 0;
+    margin: 24 0;
+  }
+
+  .projects__languages-list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .projects__languages-first {
-    grid-area: projects__languages-first;
     text-align: center;
     border-right: 1px solid #555;
+    margin-right: 10px;
+    padding: 20px;
   }
 
   .projects-text {
@@ -349,23 +351,25 @@ body {
   }
 
   .projects__languages-second {
-    grid-area: projects__languages-second;
     text-align: center;
     border-right: 1px solid #555;
+    margin-right: 10px;
+    padding: 20px;
   }
 
   .projects__languages-third {
-    grid-area: projects__languages-third;
     text-align: center;
     border-right: 1px solid #555;
+    margin-right: 10px;
+    padding: 20px;
   }
 
   .projects__languages-fourth {
-    grid-area: projects__languages-fourth;
     text-align: center;
+    margin-right: 10px;
+    padding: 20px;
   }
 
   .projects__btn {
-    grid-area: projects__btn;
   }
 }
