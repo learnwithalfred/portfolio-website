@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -107,28 +106,30 @@
       </section>
       <section class="work">
         <div>
-          <h1>My Work Experience</h1>
-          <hr />
+          <h1 class="work__main-header">MY RECENT WORK</h1>
+          <hr class="work__hr" />
         </div>
         <div>
-          <div>
-            <img src="./images/image_placeholder.png" alt="Project Stories" />
-          </div>
-          <div>
-            <h3>Multi-Post Stories</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <div>
-              <div><p>css</p></div>
-              <div><p>html</p></div>
-              <div><p>bootstrap</p></div>
-              <div><p>ruby</p></div>
+          <div class="projects">
+            <div class="projects__image">
+              <!-- <img src="./images/image_placeholder.png" alt="Project Stories" /> -->
             </div>
-            <button>See Projects</button>
+            <div class="project__stories">
+              <h3 class="project__stories-header">Multi-Post Stories</h3>
+              <p class="project__stories-text">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                standard dummy text.
+              </p>
+            </div>
+            <div class="work__technologies-first"><p>css</p></div>
+            <div class="work__technologies-second"><p>html</p></div>
+            <div class="work__technologies-third"><p>bootstrap</p></div>
+            <div class="work__technologies-fourth"><p>ruby</p></div>
+            <div class="projects__btn">
+              <button class="work__btn">See Projects</button>
+            </div>
           </div>
         </div>
       </section>
