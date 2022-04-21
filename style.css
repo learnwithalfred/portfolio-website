@@ -315,11 +315,8 @@ body {
     grid-area: card__image;
     width: 327px;
     height: 236px;
-    background: linear-gradient(0deg, #f9f9f9, #f9f9f9),
-      url(./images/image_placeholder.png);
-  }
-
-  .projects {
+    background: #edecff;
+    background-image: url(./images/image_placeholder.png);
   }
 
   .first__project::before {
