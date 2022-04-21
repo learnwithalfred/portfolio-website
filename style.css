@@ -253,33 +253,32 @@ body {
     background: #5e42d7;
   }
 
-  .projects {
+  .card {
     position: relative;
     margin: 24px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 0.1fr 0.1fr;
     grid-template-areas:
-      'projects__image projects__image projects__image projects__image'
-      'project__stories project__stories project__stories project__stories'
-      'work__technologies-first work__technologies-second work__technologies-third work__technologies-fourth'
+      'card__image card__image card__image card__image'
+      'projects projects projects projects'
+      'projects__languages-first projects__languages-second projects__languages-third projects__languages-fourth'
       'projects__btn projects__btn projects__btn projects__btn';
   }
 
-  .projects__image {
-    grid-area: projects__image;
+  .card__image {
+    grid-area: card__image;
     width: 327px;
     height: 236px;
-    background:
-      linear-gradient(0deg, #f9f9f9, #f9f9f9),
+    background: linear-gradient(0deg, #f9f9f9, #f9f9f9),
       url(./images/image_placeholder.png);
   }
 
-  .project__stories {
-    grid-area: project__stories;
+  .projects {
+    grid-area: projects;
   }
 
-  .first__project::before {
+  .first__card::before {
     content: '';
     position: absolute;
     width: 39.61px;
@@ -291,7 +290,7 @@ body {
     background-image: url(./images/Ellipse\ 19@2x.png);
   }
 
-  .second__project::before {
+  .second__card::before {
     content: '';
     position: absolute;
     width: 70.28px;
@@ -303,7 +302,7 @@ body {
     background-image: url(./images/Ellipse\ 20@2x.png);
   }
 
-  .third__project::before {
+  .third__card::before {
     content: '';
     position: absolute;
     width: 308px;
@@ -314,7 +313,7 @@ body {
     background-image: url(./images/Ellipse\ 21@2x.png);
   }
 
-  .fourth__project::before {
+  .fourth__card::before {
     content: '';
     position: absolute;
     width: 101.29px;
@@ -326,20 +325,20 @@ body {
     background-image: url(./images/Ellipse\ 22@2x.png);
   }
 
-  .project__stories-header {
+  .projects-header {
     color: #fff;
     font-weight: 500;
     font-size: 32px;
     margin: 0 0 24px 0;
   }
 
-  .work__technologies-first {
-    grid-area: work__technologies-first;
+  .projects__languages-first {
+    grid-area: projects__languages-first;
     text-align: center;
     border-right: 1px solid #555;
   }
 
-  .project__stories-text {
+  .projects-text {
     margin: 24px 0;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -349,20 +348,20 @@ body {
     color: #dcdce8;
   }
 
-  .work__technologies-second {
-    grid-area: work__technologies-second;
+  .projects__languages-second {
+    grid-area: projects__languages-second;
     text-align: center;
     border-right: 1px solid #555;
   }
 
-  .work__technologies-third {
-    grid-area: work__technologies-third;
+  .projects__languages-third {
+    grid-area: projects__languages-third;
     text-align: center;
     border-right: 1px solid #555;
   }
 
-  .work__technologies-fourth {
-    grid-area: work__technologies-fourth;
+  .projects__languages-fourth {
+    grid-area: projects__languages-fourth;
     text-align: center;
   }
 
