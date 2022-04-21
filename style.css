@@ -88,23 +88,15 @@ body {
     padding: 15px;
   }
 
-  .developer-hr-center {
-    position: absolute;
-    height: 0;
-    left: 0;
-    right: 0;
-    border: 1px solid #646369;
-    margin: 0 24px;
-  }
-
-  .developer-experience {
+  .about {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     position: relative;
+    color: white;
   }
 
-  .developer-experience::before {
+  .about::before {
     content: '';
     position: absolute;
     width: 130px;
@@ -116,52 +108,43 @@ body {
     background-image: url(./images/header@2x.png);
   }
 
-  .developer-experience-container {
+  .about-container {
     width: 50%;
     position: relative;
   }
 
-  .developer-experience-list {
+  .about-list {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     padding-left: 0;
   }
 
-  .developer-experience-header {
+  .about-header {
     color: #9490ff;
     font-size: 18px;
     margin: 0 0 10px 0;
   }
 
-  .developer-experience-list-item {
+  .about-list-item {
     font-weight: 400;
     font-size: 1rem;
     margin-top: 10px;
   }
 
-  .developer-hr-bottom {
-    position: absolute;
-    height: 0;
-    left: 0;
-    right: 0;
-    border: 1px solid #646369;
-    margin: 10px 24px;
-  }
-
-  .developer-link {
+  .about-link {
     display: flex;
     flex-direction: column;
   }
 
-  .developer-link-social {
+  .about-link-social {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style-type: none;
   }
 
-  .developer-link-social .fa {
+  .about-link-social .fa {
     margin: 20px 5px 0;
     font-size: 20px;
     height: 20px;
@@ -169,7 +152,7 @@ body {
     color: white;
   }
 
-  .developer-link-work {
+  .about-link-work {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,13 +161,13 @@ body {
     cursor: pointer;
   }
 
-  .developer-link-work .fa {
+  .about-link-work .fa {
     margin: 0 5px;
     font-size: 24px;
     width: 47px;
   }
 
-  .developer-link-social .fa:hover {
+  .about-link-social .fa:hover {
     font-size: 1.5rem;
     color: #e91683;
   }
@@ -210,7 +193,11 @@ body {
     height: 104px;
   }
 
-  .work__hr {
+  .hr {
+    width: 100%;
+  }
+
+  .horizontal__line {
     border: 1px solid #646369;
   }
 
