@@ -11,6 +11,7 @@ body {
 @media only screen and (max-width: 550px) {
   .main {
     width: 100%;
+    padding: 10px;
   }
 
   .header {
@@ -197,7 +198,6 @@ body {
     flex-direction: column;
     width: 100%;
     color: white;
-    padding: 10px;
     position: relative;
   }
 
@@ -249,6 +249,7 @@ body {
   }
 
   .projects {
+    position: relative;
     margin: 24px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -273,8 +274,55 @@ body {
     grid-area: project__stories;
   }
 
+  .first__project::before {
+    content: '';
+    position: absolute;
+    width: 39.61px;
+    height: 582.57px;
+    left: -112.04px;
+    background: #edecff;
+    filter: blur(20px);
+    transform: rotate(-36.38deg);
+    background-image: url(./images/Ellipse\ 19@2x.png);
+  }
+
+  .second__project::before {
+    content: '';
+    position: absolute;
+    width: 70.28px;
+    height: 261.6px;
+    right: -10.04px;
+    background: #edecff;
+    filter: blur(50px);
+    transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
+    background-image: url(./images/Ellipse\ 20@2x.png);
+  }
+
+  .third__project::before {
+    content: '';
+    position: absolute;
+    width: 308px;
+    height: 155px;
+    left: -93px;
+    background: #edecff;
+    filter: blur(50px);
+    background-image: url(./images/Ellipse\ 21@2x.png);
+  }
+
+  .fourth__project::before {
+    content: '';
+    position: absolute;
+    width: 101.29px;
+    height: 377.04px;
+    right: -93px;
+    background: #edecff;
+    filter: blur(50px);
+    transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
+    background-image: url(./images/Ellipse\ 22@2x.png);
+  }
+
   .project__stories-header {
-    color: #ffffff;
+    color: #fff;
     font-weight: 500;
     font-size: 32px;
     margin: 0 0 24px 0;
@@ -283,7 +331,7 @@ body {
   .work__technologies-first {
     grid-area: work__technologies-first;
     text-align: center;
-    border-right: 1px solid #555555;
+    border-right: 1px solid #555;
   }
 
   .project__stories-text {
@@ -299,13 +347,13 @@ body {
   .work__technologies-second {
     grid-area: work__technologies-second;
     text-align: center;
-    border-right: 1px solid #555555;
+    border-right: 1px solid #555;
   }
 
   .work__technologies-third {
     grid-area: work__technologies-third;
     text-align: center;
-    border-right: 1px solid #555555;
+    border-right: 1px solid #555;
   }
 
   .work__technologies-fourth {
