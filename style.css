@@ -132,19 +132,19 @@ body {
     margin-top: 10px;
   }
 
-  .about-link {
+  .about__link {
     display: flex;
     flex-direction: column;
   }
 
-  .about-link-social {
+  .about__link-social {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style-type: none;
   }
 
-  .about-link-social .fa {
+  .about__link-social .fa {
     margin: 20px 5px 0;
     font-size: 20px;
     height: 20px;
@@ -152,7 +152,7 @@ body {
     color: white;
   }
 
-  .about-link-work {
+  .about__link-text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -394,8 +394,5 @@ body {
     text-align: center;
     margin-right: 10px;
     padding: 20px;
-  }
-
-  .projects__btn {
   }
 }
