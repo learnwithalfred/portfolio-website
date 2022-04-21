@@ -199,7 +199,6 @@ body {
     color: white;
     padding: 10px;
     position: relative;
-    flex-wrap: wrap;
   }
 
   .work__main-header {
@@ -207,6 +206,8 @@ body {
     font-weight: 500;
     font-size: 40px;
     margin: 24px 0;
+    width: 327px;
+    height: 104px;
   }
 
   .work__hr {
@@ -248,11 +249,10 @@ body {
   }
 
   .projects {
-    position: relative;
+    margin: 24px 0;
     display: grid;
-    height: 85vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1.2fr 0.2fr 0.2fr;
+    grid-template-rows: 1fr 1fr 0.1fr 0.1fr;
     grid-template-areas:
       'projects__image projects__image projects__image projects__image'
       'project__stories project__stories project__stories project__stories'
@@ -264,14 +264,6 @@ body {
     grid-area: projects__image;
     width: 327px;
     height: 236px;
-    margin: 24px 0;
-  }
-
-  .projects__image::before {
-    content: '';
-    position: absolute;
-    width: 327px;
-    height: 236px;
     background:
       linear-gradient(0deg, #f9f9f9, #f9f9f9),
       url(./images/image_placeholder.png);
@@ -279,14 +271,13 @@ body {
 
   .project__stories {
     grid-area: project__stories;
-    margin: 24px 0;
   }
 
   .project__stories-header {
     color: #ffffff;
     font-weight: 500;
     font-size: 32px;
-    margin: 24px 0;
+    margin: 0 0 24px 0;
   }
 
   .work__technologies-first {
