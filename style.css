@@ -234,7 +234,7 @@ body {
     margin: 24px 0;
   }
 
-  .work__btn {
+  .btn {
     background: #7d73fc;
     margin: 24px 0;
     font-style: normal;
@@ -246,6 +246,24 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #edecff;
+    padding: 12px;
+  }
+
+  .btn:hover {
+    background: #7d73fc;
+    box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  }
+
+  .btn:enabled {
+    background: #5e42d7;
+  }
+
+  .btn:disabled {
+    background: #2a2b33;
+  }
+
+  .btn:active {
+    background: #5e42d7;
   }
 
   .projects {
