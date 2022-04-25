@@ -374,11 +374,12 @@ body {
   }
 
   .projects__languages-list {
-    display: flex;
+    /* display: flex; */
     list-style-type: none;
     padding-left: 0;
-    justify-content: center;
-    align-items: center;
+
+    /* justify-content: center;
+    align-items: center; */
   }
 
   .projects__languages-first {
@@ -386,6 +387,7 @@ body {
     border-right: 1px solid #555;
     margin-right: 10px;
     padding: 20px;
+    float: left;
   }
 
   .projects-text {
@@ -403,6 +405,7 @@ body {
     border-right: 1px solid #555;
     margin-right: 10px;
     padding: 20px;
+    float: left;
   }
 
   .projects__languages-third {
@@ -410,11 +413,13 @@ body {
     border-right: 1px solid #555;
     margin-right: 10px;
     padding: 20px;
+    float: left;
   }
 
   .projects__languages-fourth {
     text-align: center;
     margin-right: 10px;
     padding: 20px;
+    float: left;
   }
 }
