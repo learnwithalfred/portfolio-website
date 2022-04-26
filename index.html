@@ -210,20 +210,33 @@
           </p>
         </div>
         <fieldset>
-          <form class="form" action="#" method="post">
-            <input type="text" name="name" id="name" placeholder="Text Input" />
+          <form class="form" action="https://formspree.io/f/xeqnpand"
+  method="POST">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Text Input"
+              required
+              maxlength="30"
+            />
             <input
               type="email"
               name="email"
               id="name"
               placeholder="jeremy@gmail.com"
+              required
             />
             <textarea
+            
               name="message"
               id="message"
               cols="30"
               rows="10"
               placeholder="Enter text here"
+              required
+              maxlength="500"
+              
             ></textarea>
             <input class="btn" type="submit" value="See Projects" />
           </form>
