@@ -199,8 +199,8 @@ body {
     display: grid;
     color: white;
     position: relative;
-    -ms-grid-columns: 1fr; 
-    -ms-grid-rows: 0.1fr 1fr 1fr 1fr 1fr;    
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 0.1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       'work__header'
       'first__card'
