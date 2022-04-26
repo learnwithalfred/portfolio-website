@@ -1,17 +1,21 @@
 * {
   border: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 body {
   background-color: #191765;
-  font-family: 'Roboto', sans-serif;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 750px) {
   .main {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
   }
 
   .header {
@@ -56,7 +60,7 @@ body {
     top: 0;
     background: #edecff;
     filter: blur(50px);
-    background-image: url(./images/header@2x.png);
+    /* background-image: url(./images/header@2x.png); */
   }
 
   .developer-info {
@@ -96,7 +100,7 @@ body {
     color: white;
   }
 
-  .about::before {
+  /* .about::before {
     content: '';
     position: absolute;
     width: 130px;
@@ -106,7 +110,7 @@ body {
     background: #edecff;
     filter: blur(50px);
     background-image: url(./images/header@2x.png);
-  }
+  } */
 
   .about-container {
     width: 50%;
@@ -311,14 +315,14 @@ body {
     flex-direction: column;
   }
 
-  .card__image {
+  /* .card__image {
     grid-area: card__image;
     width: 327px;
     height: 236px;
     background: #edecff;
     background-image: url(./images/image_placeholder.png);
-  }
-
+  } */
+/* 
   .first__project::before {
     content: '';
     position: absolute;
@@ -329,9 +333,9 @@ body {
     filter: blur(20px);
     transform: rotate(-36.38deg);
     background-image: url(./images/Ellipse\ 19@2x.png);
-  }
+  } */
 
-  .second__project::before {
+  /* .second__project::before {
     content: '';
     position: absolute;
     width: 70.28px;
@@ -341,7 +345,7 @@ body {
     filter: blur(50px);
     transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
     background-image: url(./images/Ellipse\ 20@2x.png);
-  }
+  } */
 
   .third__project::before {
     content: '';
@@ -351,10 +355,10 @@ body {
     left: -93px;
     background: #edecff;
     filter: blur(50px);
-    background-image: url(./images/Ellipse\ 21@2x.png);
+    /* background-image: url(./images/Ellipse\ 21@2x.png); */
   }
 
-  .fourth__project::before {
+  /* .fourth__project::before {
     content: '';
     position: absolute;
     width: 101.29px;
@@ -364,7 +368,7 @@ body {
     filter: blur(50px);
     transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
     background-image: url(./images/Ellipse\ 22@2x.png);
-  }
+  } */
 
   .projects-header {
     color: #fff;
@@ -374,12 +378,12 @@ body {
   }
 
   .projects__languages-list {
-    /* display: flex; */
+    display: flex;
     list-style-type: none;
     padding-left: 0;
 
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
   }
 
   .projects__languages-first {
@@ -387,7 +391,7 @@ body {
     border-right: 1px solid #555;
     margin-right: 10px;
     padding: 20px;
-    float: left;
+    /* float: left; */
   }
 
   .projects-text {
