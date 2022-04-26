@@ -173,36 +173,23 @@ body {
     font-style: normal;
   }
 
-  .contact__link--social .fa:hover {
-    background: #7d73fc;
-    box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-  }
-
-  .contact__link--social .fa:enabled {
-    background: #5e42d7;
-  }
-
-  .contact__link--social .fa:active {
-    background: #5e42d7;
-  }
-
-  .contact__link--social .fa:disabled {
-    background: #2a2b33;
-  }
-
+  .contact__link--social .fa:hover,
   .header-humbugger--icon:hover {
     background: #7d73fc;
     box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
   }
 
+  .contact__link--social .fa:enabled,
   .header-humbugger--icon:enabled {
     background: #5e42d7;
   }
 
+  .contact__link--social .fa:active,
   .header-humbugger--icon:active {
     background: #5e42d7;
   }
 
+  .contact__link--social .fa:disabled,
   .header-humbugger--icon:disabled {
     background: #2a2b33;
   }
@@ -255,26 +242,6 @@ body {
     margin: 24px 0;
     border: 1px solid #646369;
   }
-
-  /* .work__stories--header {
-    color: white;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 44px;
-    display: flex;
-    align-items: center;
-  }
-
-  .work__stories-text {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    color: #dcdce8;
-    margin: 24px 0;
-  } */
 
   .btn {
     background: #7d73fc;
@@ -372,7 +339,7 @@ body {
     background-image: url(./images/Ellipse\ 22@2x.png);
   }
 
-  .projects-header {
+  .projects__header {
     color: #fff;
     font-weight: 500;
     font-size: 32px;
@@ -387,7 +354,7 @@ body {
     align-items: center;
   }
 
-  .projects__languages-first {
+  .projects__languages--first {
     text-align: center;
     border-right: 1px solid #555;
     margin-right: 10px;
@@ -404,7 +371,7 @@ body {
     color: #dcdce8;
   }
 
-  .projects__languages-second {
+  .projects__languages--second {
     text-align: center;
     border-right: 1px solid #555;
     margin-right: 10px;
@@ -412,7 +379,7 @@ body {
     float: left;
   }
 
-  .projects__languages-third {
+  .projects__languages--third {
     text-align: center;
     border-right: 1px solid #555;
     margin-right: 10px;
@@ -420,7 +387,7 @@ body {
     float: left;
   }
 
-  .projects__languages-fourth {
+  .projects__languages--fourth {
     text-align: center;
     margin-right: 10px;
     padding: 20px;
