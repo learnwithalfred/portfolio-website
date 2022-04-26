@@ -19,24 +19,24 @@
   <body>
     <main class="main">
       <nav class="header">
-        <a class="header-logo" href="#">Alfred</a>
-        <a href="javascript:void(0);" class="header-humbugger-icon">
+        <a class="header__logo" href="#">Alfred</a>
+        <a href="javascript:void(0);" class="header__humbugger__icon">
           <i class="fa fa-bars"></i>
         </a>
       </nav>
       <section class="developer">
-        <div class="developer-info">
-          <h1 class="developer-info-name">Laura Jong</h1>
-          <h2 class="developer-info-title">Software Developer</h2>
+        <div class="developer__info">
+          <h1 class="developer__info--name">Laura Jong</h1>
+          <h2 class="developer__info--title">Software Developer</h2>
         </div>
-        <div class="developer-about">
+        <div class="description__text">
           <p>
             I can help you build a product , feature or website Look through
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hesitate to contact me.
           </p>
         </div>
-        <div class="hr">
+        <div>
           <hr class="horizontal__line" />
         </div>
       </section>
@@ -74,11 +74,11 @@
           </ul>
         </div>
 
-        <div class="hr">
+        <div>
           <hr class="horizontal__line" />
         </div>
-        <div class="about__link">
-          <ul class="about__link-social">
+        <div class="contact__link">
+          <ul class="contact__link--social">
             <li>
               <a href="#"><i class="fa fa-github"> </i> </a>
             </li>
@@ -95,7 +95,7 @@
               <a href="#"><i class="fa fa-instagram"> </i> </a>
             </li>
           </ul>
-          <ul class="about__link-text">
+          <ul class="contact__link--text">
             <li><i class="fa fa-arrow-down"></i>Work</li>
           </ul>
         </div>
@@ -103,7 +103,7 @@
       <section class="work">
         <div class="work__header">
           <h1 class="work__main-header">MY RECENT WORK</h1>
-          <div class="hr">
+          <div>
             <hr class="horizontal__line" />
           </div>
         </div>
@@ -119,7 +119,7 @@
             </p>
           </div>
           <div class="projects__languages">
-            <ul class="projects__languages-list">
+            <ul class="projects__languages--list">
               <li class="projects__languages-first">css</li>
               <li class="projects__languages-second">html</li>
               <li class="projects__languages-third">bootstrap</li>
@@ -142,7 +142,7 @@
             </p>
           </div>
           <div class="projects__languages">
-            <ul class="projects__languages-list">
+            <ul class="projects__languages--list">
               <li class="projects__languages-first">css</li>
               <li class="projects__languages-second">html</li>
               <li class="projects__languages-third">bootstrap</li>
@@ -165,7 +165,7 @@
             </p>
           </div>
           <div class="projects__languages">
-            <ul class="projects__languages-list">
+            <ul class="projects__languages--list">
               <li class="projects__languages-first">css</li>
               <li class="projects__languages-second">html</li>
               <li class="projects__languages-third">bootstrap</li>
@@ -188,7 +188,7 @@
             </p>
           </div>
           <div class="projects__languages">
-            <ul class="projects__languages-list">
+            <ul class="projects__languages--list">
               <li class="projects__languages-first">css</li>
               <li class="projects__languages-second">html</li>
               <li class="projects__languages-third">bootstrap</li>
@@ -198,6 +198,60 @@
           <div>
             <button class="btn">See Projects</button>
           </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact__text">
+          <h3 class="contact__text--header">Contact Us</h3>
+          <p class="description__text">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+        </div>
+        <fieldset>
+          <form class="form" action="#" method="post">
+            <input type="text" name="name" id="name" placeholder="Text Input" />
+            <input
+              type="email"
+              name="email"
+              id="name"
+              placeholder="jeremy@gmail.com"
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter text here"
+            ></textarea>
+            <input class="btn" type="submit" value="See Projects" />
+          </form>
+        </fieldset>
+        <div>
+          <hr class="horizontal__line" />
+        </div>
+        <div class="contact__link">
+          <ul class="contact__link--social">
+            <li>
+              <a href="#"><i class="fa fa-github"> </i> </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin"> </i> </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"> </i> </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-facebook"> </i> </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"> </i> </a>
+            </li>
+          </ul>
+          <a href="mailto:emailhere@email.com" class="contact__email"
+            >emailhere@email.com</a
+          >
         </div>
       </section>
     </main>

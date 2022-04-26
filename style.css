@@ -10,6 +10,7 @@
 
 body {
   background-color: #191765;
+  color: white;
 }
 
 @media only screen and (max-width: 550px) {
@@ -28,7 +29,7 @@ body {
     margin: 20px;
   }
 
-  .header-logo {
+  .header__logo {
     width: 81px;
     top: 14.58px;
     left: 8.33px;
@@ -37,7 +38,7 @@ body {
     height: 16px;
   }
 
-  .header-humbugger-icon {
+  .header__humbugger__icon {
     width: 33.33px;
     top: 14.58px;
     left: 8.33px;
@@ -64,12 +65,12 @@ body {
     background-image: url(./images/header@2x.png);
   }
 
-  .developer-info {
+  .developer__info {
     height: 180px;
     text-align: center;
   }
 
-  .developer-info-name {
+  .developer__info--name {
     font-weight: 700;
     font-size: 48px;
     text-align: center;
@@ -78,7 +79,7 @@ body {
     margin: 30px 0 0 0;
   }
 
-  .developer-info-title {
+  .developer__info--title {
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
@@ -86,8 +87,8 @@ body {
     color: #edecff;
   }
 
-  .developer-about {
-    font-size: 20px;
+  .description__text {
+    font-size: 16px;
     text-align: center;
     margin: 14px 0;
     padding: 15px;
@@ -136,28 +137,28 @@ body {
     margin-top: 10px;
   }
 
-  .about__link {
+  .contact__link {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .about__link-social {
+  .contact__link--social {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style-type: none;
   }
 
-  .about__link-social .fa {
-    margin: 20px 5px 0;
+  .contact__link--social .fa {
+    margin: 20px 5px 0 0;
     font-size: 20px;
     height: 20px;
     width: 20px;
     color: white;
   }
 
-  .about__link-text {
+  .contact__link--text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,43 +167,43 @@ body {
     margin-top: 20px;
   }
 
-  .about__link-text .fa {
+  .contact__link--text .fa {
     margin: 0 12px;
     font-size: 1rem;
     font-style: normal;
   }
 
-  .about__link-social .fa:hover {
+  .contact__link--social .fa:hover {
     background: #7d73fc;
     box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
   }
 
-  .about__link-social .fa:enabled {
+  .contact__link--social .fa:enabled {
     background: #5e42d7;
   }
 
-  .about__link-social .fa:active {
+  .contact__link--social .fa:active {
     background: #5e42d7;
   }
 
-  .about__link-social .fa:disabled {
+  .contact__link--social .fa:disabled {
     background: #2a2b33;
   }
 
-  .header-humbugger-icon:hover {
+  .header-humbugger--icon:hover {
     background: #7d73fc;
     box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
   }
 
-  .header-humbugger-icon:enabled {
+  .header-humbugger--icon:enabled {
     background: #5e42d7;
   }
 
-  .header-humbugger-icon:active {
+  .header-humbugger--icon:active {
     background: #5e42d7;
   }
 
-  .header-humbugger-icon:disabled {
+  .header-humbugger--icon:disabled {
     background: #2a2b33;
   }
 
@@ -249,16 +250,13 @@ body {
     height: 104px;
   }
 
-  .hr {
+  .horizontal__line {
     width: 100%;
     margin: 24px 0;
-  }
-
-  .horizontal__line {
     border: 1px solid #646369;
   }
 
-  .work__stories-header {
+  /* .work__stories--header {
     color: white;
     font-style: normal;
     font-weight: 500;
@@ -276,7 +274,7 @@ body {
     line-height: 28px;
     color: #dcdce8;
     margin: 24px 0;
-  }
+  } */
 
   .btn {
     background: #7d73fc;
@@ -381,7 +379,7 @@ body {
     margin: 24px 0;
   }
 
-  .projects__languages-list {
+  .projects__languages--list {
     display: flex;
     list-style-type: none;
     padding-left: 0;
@@ -427,5 +425,48 @@ body {
     margin-right: 10px;
     padding: 20px;
     float: left;
+  }
+
+  .contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0 10px;
+  }
+
+  .contact__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__text--header {
+    color: #9390ff;
+    font-weight: 500px;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+
+  .form {
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    width: 100%;
+    margin: 24px 0;
+    padding: 16px;
+  }
+
+  .contact__email {
+    margin: 5px auto;
+    font-size: 20px;
+    color: white;
   }
 }
