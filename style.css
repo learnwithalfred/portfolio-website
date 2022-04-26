@@ -12,7 +12,7 @@ body {
   background-color: #191765;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 550px) {
   .main {
     width: 100%;
     padding: 15px;
@@ -56,11 +56,12 @@ body {
     position: absolute;
     width: 160px;
     height: 160px;
-    left: -120px;
+    left: -106px;
+    right: 0;
     top: 0;
     background: #edecff;
     filter: blur(50px);
-    /* background-image: url(./images/header@2x.png); */
+    background-image: url(./images/header@2x.png);
   }
 
   .developer-info {
@@ -100,17 +101,16 @@ body {
     color: white;
   }
 
-  /* .about::before {
+  .about::before {
     content: '';
     position: absolute;
-    width: 130px;
-    height: 130px;
-    left: 339px;
-    top: 0;
+    width: 68px;
+    height: 68px;
+    right: 0;
     background: #edecff;
     filter: blur(50px);
     background-image: url(./images/header@2x.png);
-  } */
+  }
 
   .about-container {
     width: 50%;
@@ -310,19 +310,21 @@ body {
 
   .card {
     position: relative;
-    margin: 24px 0;
+    margin: 24px auto;
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
-  /* .card__image {
+  .card__image {
     grid-area: card__image;
-    width: 327px;
+    width: 100%;
     height: 236px;
     background: #edecff;
+    margin: 0 auto;
     background-image: url(./images/image_placeholder.png);
-  } */
-/* 
+  }
+
   .first__project::before {
     content: '';
     position: absolute;
@@ -333,19 +335,19 @@ body {
     filter: blur(20px);
     transform: rotate(-36.38deg);
     background-image: url(./images/Ellipse\ 19@2x.png);
-  } */
+  }
 
-  /* .second__project::before {
+  .second__project::before {
     content: '';
     position: absolute;
     width: 70.28px;
-    height: 261.6px;
-    right: -10.04px;
+    height: 100.6px;
+    right: 0;
     background: #edecff;
     filter: blur(50px);
     transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
     background-image: url(./images/Ellipse\ 20@2x.png);
-  } */
+  }
 
   .third__project::before {
     content: '';
@@ -355,20 +357,20 @@ body {
     left: -93px;
     background: #edecff;
     filter: blur(50px);
-    /* background-image: url(./images/Ellipse\ 21@2x.png); */
+    background-image: url(./images/Ellipse\ 21@2x.png);
   }
 
-  /* .fourth__project::before {
+  .fourth__project::before {
     content: '';
     position: absolute;
     width: 101.29px;
-    height: 377.04px;
-    right: -93px;
+    height: 107.04px;
+    right: 0;
     background: #edecff;
-    filter: blur(50px);
+    filter: blur(30px);
     transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
     background-image: url(./images/Ellipse\ 22@2x.png);
-  } */
+  }
 
   .projects-header {
     color: #fff;
@@ -381,7 +383,6 @@ body {
     display: flex;
     list-style-type: none;
     padding-left: 0;
-
     justify-content: center;
     align-items: center;
   }
@@ -391,7 +392,6 @@ body {
     border-right: 1px solid #555;
     margin-right: 10px;
     padding: 20px;
-    /* float: left; */
   }
 
   .projects-text {
