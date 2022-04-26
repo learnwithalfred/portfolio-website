@@ -139,6 +139,7 @@ body {
   .about__link {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .about__link-social {
@@ -161,14 +162,14 @@ body {
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    height: 32px;
     cursor: pointer;
+    margin-top: 20px;
   }
 
   .about__link-text .fa {
-    margin: 0 5px;
-    font-size: 24px;
-    width: 47px;
+    margin: 0 12px;
+    font-size: 1rem;
+    font-style: normal;
   }
 
   .about__link-social .fa:hover {
@@ -250,6 +251,7 @@ body {
 
   .hr {
     width: 100%;
+    margin: 24px 0;
   }
 
   .horizontal__line {
@@ -376,7 +378,7 @@ body {
     color: #fff;
     font-weight: 500;
     font-size: 32px;
-    margin: 24 0;
+    margin: 24px 0;
   }
 
   .projects__languages-list {
