@@ -36,9 +36,9 @@ Alfred Boateng
 - Twitter: [@kb_alfred](https://twitter.com/kb_alfred)
 - LinkedIn: [Alfred Boateng](https://www.linkedin.com/in/alfred-boateng-704670138/)
 
-## 🤝 Contributing
+## 🤝 Contributers
 
-Contributions, issues, and feature requests are welcome!
+-  Diego Hernández: [@diegoh40](https://github.com/diegoh40)
 
 ## Show your support
 
