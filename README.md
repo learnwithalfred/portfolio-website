@@ -36,9 +36,15 @@ Alfred Boateng
 - Twitter: [@kb_alfred](https://twitter.com/kb_alfred)
 - LinkedIn: [Alfred Boateng](https://www.linkedin.com/in/alfred-boateng-704670138/)
 
-## 🤝 Contributing
+## 🤝 Contributers
 
-Contributions, issues, and feature requests are welcome!
+-  Diego Hernández: [@diegoh40](https://github.com/diegoh40)
+
+
+# Contributor's code 
+
+## This is the link to Diego Hernández's code
+`https://github.com/diegoh40/Diego-Portfolio/pull/3`
 
 ## Show your support
 
