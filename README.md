@@ -40,6 +40,12 @@ Alfred Boateng
 
 -  Diego Hernández: [@diegoh40](https://github.com/diegoh40)
 
+
+# Contributor's code 
+
+## This is the link to Diego Hernández's code
+`https://github.com/diegoh40/Diego-Portfolio/pull/3`
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
