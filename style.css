@@ -37,6 +37,8 @@ body {
   color: white;
   text-decoration: none;
   height: 16px;
+  transition: all 1000ms ease-in;
+  transform: rotate(360deg);
 }
 
 .nav__humbugger__icon {
