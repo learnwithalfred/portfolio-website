@@ -108,6 +108,10 @@ body {
   padding: 1rem;
 }
 
+.description__text:hover {
+  transform: translate(50px, 0);
+}
+
 .about {
   display: flex;
   flex-wrap: wrap;
@@ -153,12 +157,14 @@ body {
   list-style-type: none;
 }
 
-.contact__link--social .fa {
+.fa {
+  font-style: normal;
+  color: white;
   margin: 0 1rem;
   font-size: 1.5rem;
   height: 1.5rem;
   width: 1.5rem;
-  color: white;
+  transform: all 500ms ease-in;
 }
 
 .contact__link--text {
@@ -170,31 +176,8 @@ body {
   margin-top: 30px;
 }
 
-.contact__link--text .fa {
-  margin: 0 12px;
-  font-size: 1rem;
-  font-style: normal;
-}
-
-.contact__link--social .fa:hover,
-.header-humbugger--icon:hover {
-  background: #7d73fc;
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-}
-
-.contact__link--social .fa:enabled,
-.header-humbugger--icon:enabled {
-  background: #5e42d7;
-}
-
-.contact__link--social .fa:active,
-.header-humbugger--icon:active {
-  background: #5e42d7;
-}
-
-.contact__link--social .fa:disabled,
-.header-humbugger--icon:disabled {
-  background: #2a2b33;
+.fa:hover {
+  transform: scale(2);
 }
 
 .work {
@@ -251,7 +234,7 @@ body {
 }
 
 .btn {
-  background: #7d73fc;
+  background-color: #7d73fc;
   margin: 1.5rem 0;
   font-style: normal;
   font-weight: 500;
@@ -263,23 +246,19 @@ body {
   letter-spacing: 0.03em;
   color: #edecff;
   padding: 12px;
+  transition: all 500ms ease-in;
+  cursor: pointer;
 }
 
-.btn:hover {
-  background: #7d73fc;
+.btn:hover,
+.btn:active {
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-}
-
-.btn:enabled {
-  background: #5e42d7;
+  color: #7d73fc;
+  background-color: #fff;
 }
 
 .btn:disabled {
   background: #2a2b33;
-}
-
-.btn:active {
-  background: #5e42d7;
 }
 
 .card {
@@ -503,7 +482,20 @@ textarea {
     display: block;
     margin: 0 1rem;
     font-weight: 500;
+  }
+
+  .nav__item > a {
+    transition: all 500ms ease-out;
+    transition-delay: 50ms;
     color: #fff;
+  }
+
+  .nav__item > a:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: #7d73fc;
+    font-size: 1.2rem;
+    padding: 0 10px;
   }
 
   .developer__info--name {
