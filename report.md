@@ -1,18 +1,34 @@
 ### Page titles
 
-Is everything ok, not issue found.
+No issue found.
 
 ### Images text alternatives
 
-Don't have images, not issue found. When you will add an image use alt.
+Don't have images.
+Not issue found.
+When you add an image use alt.
 
 ### Headings
 
-Is everyhing ok, not issue found.
+Not issue found.
 
 ### Contrast
 
-You may change the color of the headings
+No Issues found
 
+### Resize
 
+Fix issues with page scrolling when zooming
 
+## Interaction
+
+No issues found
+
+## Moving content
+
+No issues found
+There is no moving content in code
+
+## Multimedia
+
+No issues found
