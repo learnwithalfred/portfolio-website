@@ -28,6 +28,11 @@ To get a local copy up and running follow these simple example steps.
 - Open project with text editor to view changes
 - Run the code using [live server](https://www.google.com/search?client=safari&rls=en&q=live+server&ie=UTF-8&oe=UTF-8)
 
+## Deployment
+
+# add github pages link here
+
+
 ## Author
 
 Alfred Boateng
