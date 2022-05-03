@@ -344,7 +344,6 @@ body {
   padding-left: 0;
   justify-content: center;
   align-items: center;
-  width: 90vw;
 }
 
 .projects__languages--first {
@@ -545,8 +544,8 @@ textarea {
   }
 
   .card__image {
-    width: 100%;
-    height: min(100%);
+    width: 35rem;
+    height: auto;
     background: #edecff;
     margin: 0 1.5rem;
   }
@@ -608,13 +607,17 @@ textarea {
   }
 
   .projects {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     padding: 0 1.5rem;
     margin: 0 1.5rem;
     grid-area: projects;
+  }
+
+  .first__project {
+    display: flex;
+    flex-direction: column;
   }
 
   .contact {
