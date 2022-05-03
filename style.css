@@ -12,7 +12,10 @@
 body {
   background-color: #191765;
   color: white;
-  padding: 20px 20px 0 20px;
+  padding: 1.3rem 1.3rem 0 1.3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .main {
@@ -24,27 +27,27 @@ body {
   height: 1rem;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0 1rem;
   width: 100%;
   position: relative;
-  margin: 1.5rem;
 }
 
 .nav__logo {
-  width: 81px;
+  width: 5rem;
   top: 1rem;
-  left: 8.33px;
+  left: 0.5rem;
   color: white;
   text-decoration: none;
-  height: 16px;
+  height: 1rem;
   transition: all 1000ms ease-in;
   transform: rotate(360deg);
+  background-color: transparent;
 }
 
 .nav__humbugger__icon {
   width: 33.33px;
   top: 14.58px;
-  left: 8.33px;
+  left: 0.5rem;
   color: white;
 }
 
@@ -78,7 +81,7 @@ body {
   flex-direction: column;
   position: relative;
   width: 100%;
-  margin: 24px 0;
+  margin: 1.5rem 0;
   color: white;
 }
 
@@ -88,10 +91,10 @@ body {
 
 .developer__info--name {
   font-weight: 700;
-  font-size: 48px;
-  letter-spacing: 0.37px;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
   color: #7d73fc;
-  margin: 30px 0 0 0;
+  margin: 2rem 0 0 0;
   margin: 0 auto;
 }
 
@@ -104,7 +107,7 @@ body {
 }
 
 .description__text {
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   margin: 1rem 0;
   padding: 1rem;
@@ -120,6 +123,7 @@ body {
   position: relative;
   color: white;
   width: 100%;
+  background-color: transparent;
 }
 
 .about-container {
@@ -136,7 +140,7 @@ body {
 
 .about-header {
   color: #9490ff;
-  font-size: 18px;
+  font-size: 1.2rem;
   margin: 0 0 1rem 0;
 }
 
@@ -175,7 +179,7 @@ body {
   justify-content: center;
   list-style-type: none;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 2rem;
 }
 
 .fa:hover {
@@ -225,14 +229,14 @@ body {
 
 .horizontal__line {
   width: 100%;
-  margin: 24px 0;
+  margin: 1.5rem 0;
   border-bottom: 1px solid #646369;
 }
 
 .horizontal__line--footer {
   width: 100%;
   border-bottom: 2px solid #3a3837;
-  margin: 16px;
+  margin: 1rem;
 }
 
 .btn {
@@ -240,21 +244,21 @@ body {
   margin: 1.5rem 0;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.8rem;
   line-height: 1.5rem;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   color: #edecff;
-  padding: 12px;
+  padding: 0.8rem;
   transition: all 500ms ease-in;
   cursor: pointer;
 }
 
 .btn:hover,
 .btn:active {
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  box-shadow: 0 8px 1rem rgba(125, 115, 252, 0.48);
   color: #7d73fc;
   background-color: #fff;
 }
@@ -273,6 +277,7 @@ body {
 .project_container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .second__card,
@@ -282,12 +287,16 @@ body {
 }
 
 .card__image {
+  display: flex;
   grid-area: card__image;
   width: 100%;
-  height: 236px;
+
+  /* height: 236px; */
+  max-height: 100%;
+  max-width: 100%;
   background: #edecff;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1.3rem;
   background-image: url(./images/image_placeholder.png);
 }
 
@@ -341,7 +350,7 @@ body {
 .projects__header {
   color: #fff;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 2rem;
   margin: 1.5rem 0;
 }
 
@@ -394,7 +403,7 @@ body {
 .contact {
   display: flex;
   flex-direction: column;
-  padding: 160px 0 1rem;
+  padding: 10rem 0 1rem;
 }
 
 .contact__text {
@@ -407,7 +416,7 @@ body {
 .contact__text--header {
   color: #9390ff;
   font-weight: 500px;
-  font-size: 32px;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -423,7 +432,7 @@ input[type='email'],
 textarea {
   width: 100%;
   margin-top: 1.5rem;
-  padding: 16px;
+  padding: 1rem;
   border-radius: 2px;
   color: black;
 }
@@ -437,7 +446,7 @@ textarea {
 
 .bottom-hr {
   width: 40%;
-  margin: 10px auto;
+  margin: 0.7rem auto;
   border: 2px solid black;
   margin-bottom: 2px;
 }
@@ -467,7 +476,7 @@ textarea {
     width: 100%;
     left: 0;
     top: 0;
-    padding: 0 142px;
+    padding: 1rem 8.5rem;
   }
 
   .nav__item--container {
@@ -497,7 +506,7 @@ textarea {
     border: 2px solid black;
     color: #7d73fc;
     font-size: 1.2rem;
-    padding: 0 10px;
+    padding: 0 0.7rem;
   }
 
   .developer__info--name {
@@ -523,13 +532,13 @@ textarea {
   }
 
   .header {
-    height: 16px;
+    height: 1rem;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0.7rem;
     width: 100%;
     position: relative;
-    margin: 20px;
+    margin: 1.3rem;
   }
 
   .about-container {
@@ -555,8 +564,8 @@ textarea {
   }
 
   .card__image {
-    width: 35rem;
-    height: auto;
+    width: 100%;
+    height: 100%;
     background: #edecff;
     margin: 0 1.5rem;
   }
@@ -565,7 +574,7 @@ textarea {
     display: grid;
     height: auto;
     width: 100%;
-    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-columns: 1fr 0.6fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'first__img projects';
   }
@@ -574,7 +583,7 @@ textarea {
     display: grid;
     height: auto;
     width: 100%;
-    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-columns: 0.6fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'projects second_img';
   }
@@ -583,7 +592,7 @@ textarea {
     display: grid;
     height: auto;
     width: 100%;
-    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-columns: 1fr 0.6fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'third_img projects';
   }
@@ -592,7 +601,7 @@ textarea {
     display: grid;
     height: auto;
     width: 100%;
-    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-columns: 0.6fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'projects fourth_img';
   }
@@ -614,14 +623,15 @@ textarea {
   }
 
   .work__header {
-    margin: 24px;
+    margin: 1.5rem;
   }
 
   .projects {
-    /* width: 35%; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    padding: 0 1.5rem;
     margin: 0 1.5rem;
     grid-area: projects;
   }
@@ -666,8 +676,8 @@ textarea {
     flex-direction: column;
     width: 100%;
     padding: 0 1.5rem;
-    font-size: 20px;
-    margin: 55px 0 24px;
+    font-size: 1.3rem;
+    margin: 55px 0 1.5rem;
   }
 
   .contact__link--text--left {
@@ -675,7 +685,7 @@ textarea {
   }
 
   .contact__link--text--left .fa {
-    margin-left: 16px;
+    margin-left: 1rem;
   }
 
   .contact__link--text {
