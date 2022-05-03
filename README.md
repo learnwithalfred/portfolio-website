@@ -18,7 +18,7 @@ This is my portfolio website to show employers and hiring managers what am are c
 
 - Headings `No Issues found`git 
 
-- Contrast - `There was an issue with my bottom background , but i have fixed them`
+- Contrast - `There was an issue with my bottom background , but i have fixed them` [LineFixedIssue]()
 
 - Resize - `There was an issue with page resizing. But it has been fixed`
 
