@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="about-container">
-          <h5 class="about-header">Language</h5>
+          <h3 class="about-header">Language</h3>
           <ul class="about-list">
             <li class="about-list-item">Javascript</li>
             <li class="about-list-item">Ruby</li>
@@ -67,7 +67,7 @@
         </div>
         <div class="about-container">
           <div>
-            <h5 class="about-header">Frameworks</h5>
+            <h3 class="about-header">Frameworks</h3>
             <ul class="about-list">
               <li class="about-list-item">Bootstrap</li>
               <li class="about-list-item">Ruby on Rails</li>
@@ -78,7 +78,7 @@
           </div>
         </div>
         <div class="about-container">
-          <h5 class="about-header">Skills</h5>
+          <h3 class="about-header">Skills</h3>
           <ul class="about-list">
             <li class="about-list-item">CodeKit</li>
             <li class="about-list-item">Github</li>
@@ -128,7 +128,7 @@
             <div class="card__image first__img"></div>
             <div class="projects">
               <div class="first__project">
-                <h3 class="projects__header">Ab Multi-Post Stories</h3>
+                <h2 class="projects__header">Ab Multi-Post Stories</h2>
                 <p class="projects-text">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard dummy
@@ -155,7 +155,7 @@
           <div class="project_container second__card">
             <div class="projects">
               <div class="second__project">
-                <h3 class="projects__header">Multi-Post Stories</h3>
+                <h2 class="projects__header">Multi-Post Stories</h2>
                 <p class="projects-text">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard dummy
@@ -184,7 +184,7 @@
             <div class="card__image third_img"></div>
             <div class="projects">
               <div class="third__project">
-                <h3 class="projects__header">Multi-Post Stories</h3>
+                <h2 class="projects__header">Multi-Post Stories</h2>
                 <p class="projects-text">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard dummy
@@ -211,7 +211,7 @@
           <div class="project_container fourth__card">
             <div class="projects">
               <div class="fourth__project">
-                <h3 class="projects__header">Multi-Post Stories</h3>
+                <h2 class="projects__header">Multi-Post Stories</h2>
                 <p class="projects-text">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard dummy
@@ -237,7 +237,7 @@
       </section>
       <section class="contact">
         <div class="contact__text">
-          <h3 class="contact__text--header">Contact Us</h3>
+          <h2 class="contact__text--header">Contact Us</h2>
           <p class="description__text">
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I’d love
@@ -250,6 +250,7 @@
             action="https://formspree.io/f/xeqnpand"
             method="POST"
           >
+            <label aria-hidden="false"> Full Name </label>
             <input
               type="text"
               name="full_name"
@@ -258,6 +259,8 @@
               required
               maxlength="30"
             />
+            <label aria-hidden="false"> Email Address </label>
+
             <input
               type="email"
               name="email"
@@ -265,6 +268,7 @@
               placeholder="Email Address"
               required
             />
+            <label aria-hidden="false"> Enter text here </label>
             <textarea
               name="message"
               id="message"
@@ -282,7 +286,7 @@
       <hr class="horizontal__line--footer" />
     </div>
 
-    <div class="contact__link">
+    <footer class="contact__link">
       <ul class="contact__link--social footer">
         <li>
           <a title="icon" href="#"><i class="fa fa-github"> </i> </a>
@@ -303,7 +307,7 @@
       <a href="mailto:emailhere@email.com" class="contact__email"
         >emailhere@email.com</a
       >
-    </div>
+    </footer>
 
     <hr class="bottom-hr" />
   </body>

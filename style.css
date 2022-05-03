@@ -228,7 +228,7 @@ body {
 }
 
 .btn {
-  background-color: #7d73fc;
+  background-color: #10f;
   margin: 1.5rem 0;
   font-style: normal;
   font-weight: 500;
@@ -238,10 +238,14 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #edecff;
+  color: #fff;
   padding: 0.8rem;
   transition: all 500ms ease-in;
   cursor: pointer;
+}
+
+label {
+  display: none;
 }
 
 .btn:hover,
