@@ -7,31 +7,6 @@
 This is my portfolio website to show employers and hiring managers what am are capable of doing and the projects I have build so far.
 
 
-## Accessibility Report
-<img src="images/accessibility-report.png" height="20%" width="auto">
-
-### This is the accessibility report 
-
-- Page titles - `No issue found.`
-
-- Images text alternatives - `No issues found`
-
-- Headings `No Issues found`git 
-
-- Contrast - `There was an issue with my bottom background , but i have fixed them` [LineFixedIssue]()
-
-- Resize - `There was an issue with page resizing. But it has been fixed`
-
-- Interaction - `There were no labels with the forms. But Labels has been added for screen readers only`
-
-- Moving content - `No issues found`
-
-- Multimedia - `No issues found`
-
-- The basic structure of the page  - `No Issues found`
-
-
-
 ## Built With
 
 - HTML
