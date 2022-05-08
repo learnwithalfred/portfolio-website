@@ -20,19 +20,32 @@
   <body>
     <header>
       <nav class="nav">
-        <div class="nav__logo--container">
-          <a class="nav__logo" href="#">Alfred</a>
-        </div>
+        <span id="nav__logo"> Alfred </span>
         <ul class="nav-menu">
-          <li class="nav__item"><a href="#" class="nav-link">Portfolio</a></li>
-          <li class="nav__item"><a href="#" class="nav-link">About </a></li>
-          <li class="nav__item"><a href="#" class="nav-link">Contact</a></li>
+          <li class="nav__item">
+            <a href="./#work" class="nav-link"
+              >Portfolio
+              <span class="arrow-right"><i class="fa fa-angle-right"></i></span
+            ></a>
+          </li>
+          <li class="nav__item">
+            <a href="./#about" class="nav-link"
+              >About
+              <span class="arrow-right"><i class="fa fa-angle-right"></i></span
+            ></a>
+          </li>
+          <li class="nav__item">
+            <a href="./#contact" class="nav-link"
+              >Contact
+              <span class="arrow-right"
+                ><i class="fa fa-angle-right arrow-right"></i></span
+            ></a>
+          </li>
           <li class="nav__item">
             <a title="Mail" href="#">
-              <i
-                class="fa fa-envelope nav__humbugger__icon nav-link"
-                aria-hidden="true"
-              ></i>
+              <span class="nav__humbugger__icon"
+                ><i class="fa fa-envelope nav-link" aria-hidden="true"></i
+              ></span>
             </a>
           </li>
         </ul>
@@ -43,7 +56,7 @@
       </nav>
     </header>
     <main class="main">
-      <section class="about">
+      <section class="about" id="about">
         <div class="developer developer__info">
           <h1 class="developer__info--name">Laura Jong</h1>
           <h2 class="developer__info--title">Software Developer</h2>
@@ -97,19 +110,29 @@
         </ul>
         <ul class="contact__link--social">
           <li>
-            <a title="icon" href="#"><i class="fa fa-github"> </i> </a>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-github"> </i>
+            </a>
           </li>
           <li>
-            <a title="icon" href="#"><i class="fa fa-linkedin"> </i> </a>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-linkedin"> </i>
+            </a>
           </li>
           <li>
-            <a title="icon" href="#"><i class="fa fa-twitter"> </i> </a>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-twitter"> </i>
+            </a>
           </li>
           <li>
-            <a title="icon" href="#"><i class="fa fa-facebook"> </i> </a>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-facebook"> </i>
+            </a>
           </li>
           <li>
-            <a title="icon" href="#"><i class="fa fa-instagram"> </i> </a>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-instagram"> </i>
+            </a>
           </li>
         </ul>
 
@@ -118,7 +141,7 @@
         </ul>
       </div>
 
-      <section class="work">
+      <section class="work" id="work">
         <div class="work__header">
           <h1 class="work__main-header">MY RECENT WORK</h1>
           <div>
@@ -237,7 +260,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact__text">
           <h2 class="contact__text--header">Contact Us</h2>
           <p class="description__text">
