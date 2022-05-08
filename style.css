@@ -22,31 +22,82 @@ body {
 }
 
 .nav {
-  height: 1rem;
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
-  padding: 0 1rem;
-  width: 100%;
-  position: relative;
+  padding: 0 1.5rem;
+  align-items: center;
 }
 
 .nav__logo {
-  width: 5rem;
-  top: 1rem;
-  left: 0.5rem;
+  font-size: 2rem;
   color: white;
   text-decoration: none;
-  height: 1rem;
   transition: all 1000ms ease-in;
   transform: rotate(360deg);
   background-color: transparent;
 }
 
-.nav__humbugger__icon {
-  width: 33.33px;
-  top: 14.58px;
-  left: 0.5rem;
-  color: white;
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+  position: fixed;
+  right: -100%;
+  top: 70px;
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 300ms ease-in;
+  /* background-color: #010114; */
+  /* mix-blend-mode: multiply; */
+}
+
+.nav__item {
+  margin: 1rem 0;
+}
+
+.nav-link {
+  cursor: pointer;
+  transition: all 500ms ease-out;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  border: 2px solid white;
+  font-size: 1.2rem;
+  padding: 0 0.7rem;
+}
+
+.nav-menu.active {
+  right: 0;
 }
 
 .developer::before {
@@ -259,6 +310,10 @@ label {
   background: #2a2b33;
 }
 
+.fa-angle-right {
+  display: none;
+}
+
 .card {
   position: relative;
   display: flex;
@@ -435,19 +490,12 @@ textarea {
   margin-bottom: 2px;
 }
 
-.nav__item {
-  display: none;
-}
-
-.contact__link--text--left {
-  display: none;
-}
-
 /* Desktop version - 768px and above */
 
 @media (min-width: 768px) {
-  .humbugger__icon {
+  .hamburger {
     display: none;
+    cursor: pointer;
   }
 
   .main {
@@ -455,42 +503,15 @@ textarea {
     padding: 0 142px;
   }
 
-  .nav {
-    position: absolute;
-    width: 100%;
-    left: 0;
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+    right: 0;
+    position: relative;
+    flex-direction: row;
     top: 0;
-    padding: 2rem 8.5rem;
-  }
-
-  .nav__item--container {
-    display: flex;
-    align-items: center;
-  }
-
-  .nav__logo--container {
-    display: flex;
-    align-items: center;
-  }
-
-  .nav__item {
-    display: block;
-    margin: 0 1rem;
-    font-weight: 500;
-  }
-
-  .nav__item > a {
-    transition: all 500ms ease-out;
-    transition-delay: 50ms;
-    color: #fff;
-  }
-
-  .nav__item > a:hover {
-    background-color: white;
-    border: 2px solid black;
-    color: #7d73fc;
-    font-size: 1.2rem;
-    padding: 0 0.7rem;
   }
 
   .developer__info--name {

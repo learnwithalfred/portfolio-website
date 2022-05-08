@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,30 +18,31 @@
     <title>Alfred Portfolio Website</title>
   </head>
   <body>
-    <main class="main">
+    <header>
       <nav class="nav">
         <div class="nav__logo--container">
           <a class="nav__logo" href="#">Alfred</a>
         </div>
-        <ul class="nav__item--container">
-          <li class="nav__item"><a href="#">Portfolio</a></li>
-          <li class="nav__item"><a href="#">About</a></li>
-          <li class="nav__item"><a href="#">Contact</a></li>
+        <ul class="nav-menu">
+          <li class="nav__item"><a href="#" class="nav-link">Portfolio</a></li>
+          <li class="nav__item"><a href="#" class="nav-link">About </a></li>
+          <li class="nav__item"><a href="#" class="nav-link">Contact</a></li>
           <li class="nav__item">
             <a title="Mail" href="#">
               <i
-                class="fa fa-envelope nav__humbugger__icon"
+                class="fa fa-envelope nav__humbugger__icon nav-link"
                 aria-hidden="true"
               ></i>
             </a>
           </li>
-          <li class="humbugger__icon">
-            <a title="Icon" class="nav__humbugger__icon">
-              <i class="fa fa-bars"></i>
-            </a>
-          </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"> </span>
+          <span class="bar"></span><span class="bar"></span>
+        </div>
       </nav>
+    </header>
+    <main class="main">
       <section class="about">
         <div class="developer developer__info">
           <h1 class="developer__info--name">Laura Jong</h1>
@@ -310,5 +312,7 @@
     </footer>
 
     <hr class="bottom-hr" />
+
+    <script src="/index.js"></script>
   </body>
 </html>
