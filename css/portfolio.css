@@ -1,0 +1,144 @@
+.developer::before {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: -106px;
+  right: 0;
+  top: 0;
+  background: var(--white);
+  filter: blur(50px);
+  background-image: url(./images/header@2x.png);
+}
+
+.developer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin: 1.5rem 0;
+  color: var(--white);
+}
+
+.developer__info {
+  text-align: center;
+}
+
+.developer__info--name {
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: var(--purple);
+  margin: 2rem 0 0 0;
+  margin: 0 auto;
+}
+
+.developer__info--title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.description__text {
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  right: 0;
+  top: 400px;
+  background: var(--white);
+  filter: blur(30px);
+  background-image: url(./images/header@2x.png);
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  color: var(--white);
+  width: 100%;
+  background-color: transparent;
+}
+
+.about-container {
+  width: 50%;
+  position: relative;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-header {
+  color: var(--purple);
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+}
+
+.about-list-item {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .developer__info--name {
+    font-size: 5rem;
+  }
+
+  .developer__info--title {
+    font-size: 2;
+  }
+
+  .developer__info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .about {
+    width: 60%;
+    height: 80vh;
+    margin: 88px auto 1.5rem;
+    display: flex;
+  }
+
+  .about-container {
+    width: 33.33%;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25;
+    margin: 25px 0;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0 1.5rem;
+    margin: 0 1.5rem;
+    grid-area: projects;
+  }
+
+  .first__project {
+    display: flex;
+    flex-direction: column;
+  }
+}

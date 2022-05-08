@@ -1,0 +1,130 @@
+.contact__link--text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.contact__link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact__link--social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 0 1rem;
+}
+
+.contact__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__text--header {
+  color: var(--purple);
+  font-weight: 500px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 2px;
+  color: black;
+}
+
+.contact__email {
+  margin: 1.5rem auto;
+  font-size: 1.5rem;
+  color: var(--white);
+  align-items: center;
+}
+
+.bottom-hr {
+  width: 40%;
+  margin: 0.7rem auto;
+  border: 2px solid black;
+  margin-bottom: 2px;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5.5rem 5rem 0;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .contact__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 2rem;
+  }
+
+  .contact__link--social {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact__link--social.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .contact__email {
+    width: 50%;
+  }
+
+  .description__text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1.5rem;
+    font-size: 1.3rem;
+    margin: 55px 0 1.5rem;
+  }
+
+  .contact__link--text--left {
+    display: block;
+  }
+
+  .social-icon {
+    margin-left: 1rem;
+  }
+
+  .contact__link--text {
+    margin: 0;
+  }
+}
