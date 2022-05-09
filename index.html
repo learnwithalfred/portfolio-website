@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,31 +20,45 @@
     <title>Alfred Portfolio Website</title>
   </head>
   <body>
-    <main class="main">
+    <header>
       <nav class="nav">
-        <div class="nav__logo--container">
-          <a class="nav__logo" href="#">Alfred</a>
-        </div>
-        <ul class="nav__item--container">
-          <li class="nav__item"><a href="#">Portfolio</a></li>
-          <li class="nav__item"><a href="#">About</a></li>
-          <li class="nav__item"><a href="#">Contact</a></li>
+        <span id="nav__logo"> Alfred </span>
+        <ul class="nav-menu">
+          <li class="nav__item">
+            <a href="./#work" class="nav-link"
+              >Portfolio
+              <span class="arrow-right"><i class="fa fa-angle-right"></i></span
+            ></a>
+          </li>
+          <li class="nav__item">
+            <a href="./#about" class="nav-link"
+              >About
+              <span class="arrow-right"><i class="fa fa-angle-right"></i></span
+            ></a>
+          </li>
+          <li class="nav__item">
+            <a href="./#contact" class="nav-link"
+              >Contact
+              <span class="arrow-right"
+                ><i class="fa fa-angle-right arrow-right"></i></span
+            ></a>
+          </li>
           <li class="nav__item">
             <a title="Mail" href="#">
-              <i
-                class="fa fa-envelope nav__humbugger__icon"
-                aria-hidden="true"
-              ></i>
-            </a>
-          </li>
-          <li class="humbugger__icon">
-            <a title="Icon" class="nav__humbugger__icon">
-              <i class="fa fa-bars"></i>
+              <span class="nav__humbugger__icon"
+                ><i class="fa fa-envelope nav-link" aria-hidden="true"></i
+              ></span>
             </a>
           </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"> </span>
+          <span class="bar"></span><span class="bar"></span>
+        </div>
       </nav>
-      <section class="about">
+    </header>
+    <main class="main">
+      <section class="about" id="about">
         <div class="developer developer__info">
           <h1 class="developer__info--name">Laura Jong</h1>
           <h2 class="developer__info--title">Software Developer</h2>
@@ -57,7 +74,7 @@
           </div>
         </div>
         <div class="about-container">
-          <h5 class="about-header">Language</h5>
+          <h3 class="about-header">Language</h3>
           <ul class="about-list">
             <li class="about-list-item">Javascript</li>
             <li class="about-list-item">Ruby</li>
@@ -67,7 +84,7 @@
         </div>
         <div class="about-container">
           <div>
-            <h5 class="about-header">Frameworks</h5>
+            <h3 class="about-header">Frameworks</h3>
             <ul class="about-list">
               <li class="about-list-item">Bootstrap</li>
               <li class="about-list-item">Ruby on Rails</li>
@@ -78,7 +95,7 @@
           </div>
         </div>
         <div class="about-container">
-          <h5 class="about-header">Skills</h5>
+          <h3 class="about-header">Skills</h3>
           <ul class="about-list">
             <li class="about-list-item">CodeKit</li>
             <li class="about-list-item">Github</li>
@@ -95,19 +112,29 @@
         </ul>
         <ul class="contact__link--social">
           <li>
-            <a title="icon" href="#"><i class="fa fa-github"> </i> </a>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-github"> </i>
+            </a>
           </li>
           <li>
-            <a title="icon" href="#"><i class="fa fa-linkedin"> </i> </a>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-linkedin"> </i>
+            </a>
           </li>
           <li>
-            <a title="icon" href="#"><i class="fa fa-twitter"> </i> </a>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-twitter"> </i>
+            </a>
           </li>
           <li>
-            <a title="icon" href="#"><i class="fa fa-facebook"> </i> </a>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-facebook"> </i>
+            </a>
           </li>
           <li>
-            <a title="icon" href="#"><i class="fa fa-instagram"> </i> </a>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-instagram"> </i>
+            </a>
           </li>
         </ul>
 
@@ -116,7 +143,7 @@
         </ul>
       </div>
 
-      <section class="work">
+      <section class="work" id="work">
         <div class="work__header">
           <h1 class="work__main-header">MY RECENT WORK</h1>
           <div>
@@ -124,11 +151,11 @@
           </div>
         </div>
         <div class="card">
-          <div class="project_container  first__card">
+          <div class="project_container first__card">
             <div class="card__image first__img"></div>
             <div class="projects">
               <div class="first__project">
-                <h3 class="projects__header"> Ab Multi-Post Stories</h3>
+                <h2 class="projects__header">Ab Multi-Post Stories</h2>
                 <p class="projects-text">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard dummy
@@ -155,7 +182,7 @@
           <div class="project_container second__card">
             <div class="projects">
               <div class="second__project">
-                <h3 class="projects__header">Multi-Post Stories</h3>
+                <h2 class="projects__header">Multi-Post Stories</h2>
                 <p class="projects-text">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard dummy
@@ -179,12 +206,12 @@
           </div>
         </div>
 
-        <div class="card ">
+        <div class="card">
           <div class="project_container third__card">
             <div class="card__image third_img"></div>
             <div class="projects">
               <div class="third__project">
-                <h3 class="projects__header">Multi-Post Stories</h3>
+                <h2 class="projects__header">Multi-Post Stories</h2>
                 <p class="projects-text">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard dummy
@@ -211,7 +238,7 @@
           <div class="project_container fourth__card">
             <div class="projects">
               <div class="fourth__project">
-                <h3 class="projects__header">Multi-Post Stories</h3>
+                <h2 class="projects__header">Multi-Post Stories</h2>
                 <p class="projects-text">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard dummy
@@ -235,9 +262,9 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact__text">
-          <h3 class="contact__text--header">Contact Us</h3>
+          <h2 class="contact__text--header">Contact Us</h2>
           <p class="description__text">
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I’d love
@@ -250,6 +277,7 @@
             action="https://formspree.io/f/xeqnpand"
             method="POST"
           >
+            <label aria-hidden="false"> Full Name </label>
             <input
               type="text"
               name="full_name"
@@ -258,6 +286,8 @@
               required
               maxlength="30"
             />
+            <label aria-hidden="false"> Email Address </label>
+
             <input
               type="email"
               name="email"
@@ -265,6 +295,7 @@
               placeholder="Email Address"
               required
             />
+            <label aria-hidden="false"> Enter text here </label>
             <textarea
               name="message"
               id="message"
@@ -282,7 +313,7 @@
       <hr class="horizontal__line--footer" />
     </div>
 
-    <div class="contact__link">
+    <footer class="contact__link">
       <ul class="contact__link--social footer">
         <li>
           <a title="icon" href="#"><i class="fa fa-github"> </i> </a>
@@ -303,8 +334,10 @@
       <a href="mailto:emailhere@email.com" class="contact__email"
         >emailhere@email.com</a
       >
-    </div>
+    </footer>
 
     <hr class="bottom-hr" />
+
+    <script src="/js/menu.js"></script>
   </body>
 </html>

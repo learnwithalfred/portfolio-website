@@ -2,8 +2,10 @@
 
 ![Portfolio](images/portfolio.png)
 
+### Description
 
 This is my portfolio website to show employers and hiring managers what am are capable of doing and the projects I have build so far.
+
 
 ## Built With
 
@@ -28,17 +30,13 @@ To get a local copy up and running follow these simple example steps.
 - Open project with text editor to view changes
 - Run the code using [live server](https://www.google.com/search?client=safari&rls=en&q=live+server&ie=UTF-8&oe=UTF-8)
 
-
 ## Deployment
 
 Webpage has been deployed to github pages
 
-
 ## Live Demo
 
 [Live Demo Link](https://learnwithalfred.github.io/portfolio-website/)
-
-
 
 ## Author
 
@@ -50,13 +48,15 @@ Alfred Boateng
 
 ## 🤝 Contributers
 
--  Diego Hernández: [@diegoh40](https://github.com/diegoh40)
+- Diego Hernández: [@diegoh40](https://github.com/diegoh40)
+- Dino Ronald Quispe Arias [@dqarias](https://github.com/dqarias)
+- Giuseppe Tomasini [@GiuseppeTG](https://github.com/GiuseppeTG)
 
+# Contributor's codes
 
-# Contributor's code 
+[Diego Hernández's](https://github.com/diegoh40/Diego-Portfolio/pull/3)
 
-## This is the link to Diego Hernández's code
-`https://github.com/diegoh40/Diego-Portfolio/pull/3`
+[Dino Ronald Quispe Arias](https://github.com/dqarias/Portafolio.git)
 
 ## Show your support
 
