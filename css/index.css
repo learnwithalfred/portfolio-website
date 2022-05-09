@@ -39,7 +39,7 @@ body {
 }
 
 .d-none {
-  display: hidden;
+  visibility: hidden;
 }
 
 .no-scroll-bg {
