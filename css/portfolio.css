@@ -8,7 +8,7 @@
   top: 0;
   background: var(--white);
   filter: blur(50px);
-  background-image: url(./images/header@2x.png);
+  background-image: url(/images/header@2x.png);
 }
 
 .developer {
@@ -57,7 +57,7 @@
   top: 400px;
   background: var(--white);
   filter: blur(30px);
-  background-image: url(./images/header@2x.png);
+  background-image: url(/images/header@2x.png);
 }
 
 .about {

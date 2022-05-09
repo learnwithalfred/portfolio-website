@@ -55,7 +55,7 @@
   background: var(--white);
   margin: 0 auto;
   padding: 1.3rem;
-  background-image: url(./images/image_placeholder.png);
+  background-image: url(/images/image_placeholder.png);
 }
 
 .first__project::before {
@@ -67,7 +67,7 @@
   background: var(--white);
   filter: blur(1.5rem);
   transform: rotate(-36.38deg);
-  background-image: url(./images/Ellipse\ 19@2x.png);
+  background-image: url(/images/Ellipse\ 19@2x.png);
 }
 
 .second__project::before {
@@ -79,7 +79,7 @@
   background: var(--white);
   filter: blur(50px);
   transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
-  background-image: url(./images/Ellipse\ 20@2x.png);
+  background-image: url(/images/Ellipse\ 20@2x.png);
 }
 
 .third__project::before {
@@ -90,7 +90,7 @@
   left: -93px;
   background: var(--white);
   filter: blur(50px);
-  background-image: url(./images/Ellipse\ 21@2x.png);
+  background-image: url(/images/Ellipse\ 21@2x.png);
 }
 
 .fourth__project::before {
@@ -102,7 +102,7 @@
   background: var(--white);
   filter: blur(30px);
   transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
-  background-image: url(./images/Ellipse\ 22@2x.png);
+  background-image: url(/images/Ellipse\ 22@2x.png);
 }
 
 .projects__header {
