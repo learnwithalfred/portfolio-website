@@ -42,7 +42,6 @@
 }
 
 .nav-menu {
-  background-image: url(/images/mobile-menu-background.png);
   position: fixed;
   right: -100%;
   top: 70px;

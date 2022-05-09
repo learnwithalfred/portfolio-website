@@ -18,5 +18,6 @@ document.querySelectorAll('.nav-link').forEach((item) => {
     navMenu.classList.remove('active');
     header.classList.remove('full-height');
     body.classList.remove('no-scroll-bg');
+    logo.classList.remove('d-none');
   });
 });

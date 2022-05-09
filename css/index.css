@@ -45,6 +45,8 @@ body {
 .no-scroll-bg {
   overflow-y: hidden;
   background-color: var(--primary);
+  background-image: url(/images/mobile-menu-background.png);
+  background-repeat: no-repeat;
 }
 
 .description__text:hover {
