@@ -50,6 +50,7 @@ Alfred Boateng
 
 - Diego Hernández: [@diegoh40](https://github.com/diegoh40)
 - Dino Ronald Quispe Arias [@dqarias](https://github.com/dqarias)
+- Giuseppe Tomasini [@GiuseppeTG](https://github.com/GiuseppeTG)
 
 # Contributor's codes
 
