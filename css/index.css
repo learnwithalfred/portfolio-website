@@ -159,9 +159,14 @@ label {
     display: grid;
     height: auto;
     width: 100%;
-    grid-template-columns: 1fr 0.8fr;
+    grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'third_img projects';
+  }
+
+  .project-image {
+    height: 90%;
+    width: 100%;
   }
 
   .fourth__card {

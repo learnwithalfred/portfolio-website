@@ -39,10 +39,13 @@ const dynamic = document.querySelector('.card-container');
 for (let i = 0; i < projects.length; i += 1) {
   const fetch = document.querySelector('.card-container').innerHTML;
 
+  const imageNum = i % 2 === 0 ? 'fourth_img' : 'third_img';
+  const cardNum = i % 2 === 0 ? 'fourth__card' : 'third__card';
+
   dynamic.innerHTML = ` 
     <div class="card">
-            <div class="project_container third__card">
-              <div class="card__image third_img">
+            <div class="project_container ${cardNum}">
+              <div class="card__image ${imageNum}">
                 <img
          class="project-image"
          src="${projects[i].featured_image}"
