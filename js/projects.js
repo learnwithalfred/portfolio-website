@@ -79,6 +79,7 @@ const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
 const modalContent = document.querySelector('#modal');
 
+
 const openModal = (modal) => {
   if (modal == null) return;
   modal.classList.add('active');
@@ -151,4 +152,9 @@ closeModalButtons.forEach((button) => {
   });
 });
 
+
+
+function closeModal() {
+  modal.classList.remove('active');
+}
 
