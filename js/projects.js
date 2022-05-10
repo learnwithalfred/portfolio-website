@@ -6,7 +6,7 @@ const projects = [
     description: 'A School Website build for Christ model Academy.  ',
     featured_image: 'images/projects/3.png',
     source: 'https://github.com/learnwithalfred',
-    technologies: ['Laravel', 'PHP', 'HTML & CSS', 'JavaScript'],
+    technologies: ['Laravel', 'PHP', 'HTML', 'JavaScript'],
   },
   {
     id: '1',
@@ -16,7 +16,7 @@ const projects = [
     featured_image: 'images/projects/1.png',
     live_version: 'https://aurageospatial.com',
     source: 'https://github.com/learnwithalfred',
-    technologies: ['HTML/CSS', 'React JS', 'JavaScript'],
+    technologies: ['HTML/CSS', 'React', 'JavaScript'],
   },
 
   {
@@ -26,7 +26,7 @@ const projects = [
     description: 'A freelance project built for babylon logistics company. ',
     live_version: 'https://www.babylontruckingllc.com',
     source: 'https://github.com/learnwithalfred',
-    technologies: ['HTML/CSS', 'React JS', 'JavaScript'],
+    technologies: ['HTML/CSS', 'React', 'JavaScript'],
   },
 ];
 
@@ -77,8 +77,7 @@ ${fetch}`;
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
-const modalContent = document.querySelector('#modal');
-
+const modalContent = document.querySelector('.modalData');
 
 const openModal = (modal) => {
   if (modal == null) return;
@@ -95,10 +94,7 @@ const closeModal = (modal) => {
 openModalButtons.forEach((button) => {
   button.addEventListener('click', (e) => {
     const foundIndex = Array.from(openModalButtons).indexOf(e.target);
-    modalContent.innerHTML = `<div class="modal-header">
-        <span class="title">${projects[foundIndex].name}</span>
-        <button data-close-button class="close-button">XX</button>
-      </div>
+    modalContent.innerHTML = `
       <div class="modal-body">
         <img
           class="modal-img"
@@ -151,10 +147,3 @@ closeModalButtons.forEach((button) => {
     closeModal(modal);
   });
 });
-
-
-
-function closeModal() {
-  modal.classList.remove('active');
-}
-

@@ -71,6 +71,10 @@ textarea {
   margin-bottom: 2px;
 }
 
+.contact__link--text--left {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .contact {
     display: flex;
