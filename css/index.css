@@ -111,6 +111,11 @@ label {
   background: var(--gray);
 }
 
+.project-image {
+  width: 300px;
+  height: auto;
+}
+
 /* Desktop version - 768px and above */
 
 @media (min-width: 768px) {
