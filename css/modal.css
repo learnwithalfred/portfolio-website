@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
@@ -11,7 +11,7 @@
   z-index: 5;
   background-color: var(--primary-color);
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-  width: 450px;
+  width: 80%;
   padding: 0 1.5rem;
 }
 
