@@ -1,10 +1,9 @@
 const projects = [
   {
     id: '1',
-    name: 'Christ Model Academy Website',
+    name: 'Christ Model Academy',
     live_version: 'http://christmodel.academy',
-    description:
-      'A School Website build for Christ model Academy. It shows everything about the school, including location, contact link, gallery and admissions. This Website has been loved so much by the school and the Parents board. It was build with Laravel and PHP as a freelance project. The code is not open source',
+    description: 'A School Website build for Christ model Academy.  ',
     featured_image: 'images/projects/3.png',
     source: 'https://github.com/learnwithalfred',
     technologies: ['Laravel', 'PHP', 'HTML & CSS', 'JavaScript'],
@@ -13,7 +12,7 @@ const projects = [
     id: '2',
     name: 'Aura Geospatial Website',
     description:
-      'A website build for a Drones Spraying Company. I build this website on freelance. I am still managing the website for the company. The code is not open source. To view the website visit the live link',
+      'A website build for a Drones Spraying Company. I build this website on freelance.  ',
     featured_image: 'images/projects/1.png',
     live_version: 'https://aurageospatial.com',
     source: 'https://github.com/learnwithalfred',
@@ -24,8 +23,7 @@ const projects = [
     id: '3',
     name: 'babylontruckingllc website',
     featured_image: 'images/projects/2.png',
-    description:
-      'A freelance project built for babylon logistics company. This was private project. visit link above to learn more about the project',
+    description: 'A freelance project built for babylon logistics company. ',
     live_version: 'https://www.babylontruckingllc.com',
     source: 'https://github.com/learnwithalfred',
     technologies: ['HTML/CSS', 'React JS', 'JavaScript'],
@@ -63,15 +61,64 @@ for (let i = 0; i < projects.length; i += 1) {
                 <div class="projects__languages">
                   <ul class="projects__languages--list">
                     ${projects[i].technologies.map(
-    (element) => `<li class='projects__languages--third'>${element}</li>`,
-  )}
+                      (element) =>
+                        `<li class='projects__languages--first'>${element}</li>`
+                    )}
                   </ul>
                 </div>
                 <div class="projects__btn">
-                  <button type="button" class="btn">See Projects</button>
+                  <button id='${
+                    projects[i].id
+                  }' type="button" class="btn" data-modal-target="#modal">See Projects</button>
                 </div>
               </div>
             </div>
           </div>
 ${fetch}`;
 }
+
+// const button = document.querySelectorAll('.btn');
+const openModalButtons = document.querySelectorAll('[data-modal-target]');
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
+
+// for (let i = 0; i < button.length; i += 1) {
+//   button[i].addEventListener('click', (e) => {
+//     const foundIndex = Array.from(button).indexOf(e.target);
+//     return foundIndex;
+//     // console.log(projects[foundIndex]);
+//   });
+// }
+
+const openModal = (modal) => {
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
+};
+
+const closeModal = (modal) => {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+};
+
+openModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
+});
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active');
+  modals.forEach((modal) => {
+    closeModal(modal);
+  });
+});
+
+closeModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});

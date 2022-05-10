@@ -2,6 +2,7 @@
 @import url('./portfolio.css');
 @import url('./work.css');
 @import url('./contact.css');
+@import url('./modal.css');
 
 :root {
   --primary: #191765;

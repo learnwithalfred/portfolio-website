@@ -122,8 +122,14 @@
 
 .projects__languages--first {
   text-align: center;
-  border-right: 1px solid var(--gray);
+  border-right: 1px solid var(--white);
   padding: 1.2rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.projects__languages--first:nth-child(1) {
+  border-left: 1px solid white;
 }
 
 .projects-text {
