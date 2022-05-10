@@ -22,7 +22,7 @@
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: var(--white);
+  background-color: var(--white-color);
 }
 
 .logo.active {
@@ -70,7 +70,7 @@
 
 .nav-link:hover {
   cursor: pointer;
-  border: 2px solid var(--white);
+  border: 2px solid var(--white-color);
   font-size: 1.2rem;
   padding: 0 0.7rem;
 }
@@ -91,7 +91,7 @@
 
   .nav__logo {
     font-size: 2rem;
-    color: var(--white);
+    color: var(--white-color);
     text-decoration: none;
     transition: all 1000ms ease-in;
     transform: rotate(360deg);

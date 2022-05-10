@@ -1,6 +1,6 @@
 const projects = [
   {
-    id: '1',
+    id: '0',
     name: 'Christ Model Academy',
     live_version: 'http://christmodel.academy',
     description: 'A School Website build for Christ model Academy.  ',
@@ -9,7 +9,7 @@ const projects = [
     technologies: ['Laravel', 'PHP', 'HTML & CSS', 'JavaScript'],
   },
   {
-    id: '2',
+    id: '1',
     name: 'Aura Geospatial Website',
     description:
       'A website build for a Drones Spraying Company. I build this website on freelance.  ',
@@ -20,7 +20,7 @@ const projects = [
   },
 
   {
-    id: '3',
+    id: '2',
     name: 'babylontruckingllc website',
     featured_image: 'images/projects/2.png',
     description: 'A freelance project built for babylon logistics company. ',
@@ -29,8 +29,6 @@ const projects = [
     technologies: ['HTML/CSS', 'React JS', 'JavaScript'],
   },
 ];
-
-// projects = JSON.stringify(projects);
 
 const dynamic = document.querySelector('.card-container');
 
@@ -61,15 +59,14 @@ for (let i = 0; i < projects.length; i += 1) {
                 <div class="projects__languages">
                   <ul class="projects__languages--list">
                     ${projects[i].technologies.map(
-                      (element) =>
-                        `<li class='projects__languages--first'>${element}</li>`
-                    )}
+    (element) => `<li class='projects__languages--first'>${element}</li>`,
+  )}
                   </ul>
                 </div>
                 <div class="projects__btn">
                   <button id='${
-                    projects[i].id
-                  }' type="button" class="btn" data-modal-target="#modal">See Projects</button>
+  projects[i].id
+}' type="button" class="btn" data-modal-target="#modal">See Projects</button>
                 </div>
               </div>
             </div>
@@ -77,18 +74,10 @@ for (let i = 0; i < projects.length; i += 1) {
 ${fetch}`;
 }
 
-// const button = document.querySelectorAll('.btn');
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
-
-// for (let i = 0; i < button.length; i += 1) {
-//   button[i].addEventListener('click', (e) => {
-//     const foundIndex = Array.from(button).indexOf(e.target);
-//     return foundIndex;
-//     // console.log(projects[foundIndex]);
-//   });
-// }
+const modalContent = document.querySelector('#modal');
 
 const openModal = (modal) => {
   if (modal == null) return;
@@ -103,7 +92,46 @@ const closeModal = (modal) => {
 };
 
 openModalButtons.forEach((button) => {
-  button.addEventListener('click', () => {
+  button.addEventListener('click', (e) => {
+    const foundIndex = Array.from(openModalButtons).indexOf(e.target);
+    modalContent.innerHTML = `<div class="modal-header">
+        <span class="title">${projects[foundIndex].name}</span>
+        <button data-close-button class="close-button">XX</button>
+      </div>
+      <div class="modal-body">
+        <img
+          class="modal-img"
+          src=" ${projects[foundIndex].featured_image}"
+          alt="${projects[foundIndex].name}"
+          title="${projects[foundIndex].name}"
+        />
+        <div class="modal-text">
+          <p>
+            ${projects[foundIndex].description}
+          </p>
+        </div>
+
+        <div class="projects__languages">
+          <ul class="projects__languages--list">
+            ${projects[foundIndex].technologies.map(
+    (element) => `<li class='projects__languages--first'>${element}</li>`,
+  )}
+          </ul>
+        </div>
+        <div class="btn-container">
+          <a href="${
+  projects[foundIndex].live_version
+}" type="button" class="modal-btn">
+            See Live Link <i class="fa fa-times modal-icon"></i>
+          </a>
+          <a href="${
+  projects[foundIndex].source
+}" type="button" class="modal-btn">
+            See Source Code
+            <i class="fa fa-github modal-icon" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>`;
     const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
   });
@@ -122,3 +150,5 @@ closeModalButtons.forEach((button) => {
     closeModal(modal);
   });
 });
+
+

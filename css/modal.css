@@ -6,10 +6,11 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  border: 1px solid var(--white);
+  border: 1px solid var(--white-color);
   border-radius: 5px;
   z-index: 5;
-  background-color: var(--primary);
+  background-color: var(--primary-color);
+
   /* background: rgba(255, 255, 255, 0.8); */
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   width: 650px;
@@ -70,14 +71,14 @@
 }
 
 .modal-btn {
-  background-color: var(--purple);
+  background-color: var(--purple-color);
   display: flex;
   justify-content: center;
   margin: 1.5rem 1rem;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
-  color: var(--white);
+  color: var(--white-color);
   padding: 0.8rem;
   transition: all 500ms ease-in;
   cursor: pointer;
@@ -89,6 +90,11 @@
   padding: 1rem 1.5rem 0;
   margin: 0 auto;
   text-align: center;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .modal-icon {
