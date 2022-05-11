@@ -4,11 +4,17 @@ const email = document.querySelector('#email');
 const message = document.querySelector('#message');
 const error = document.querySelector('#error-message');
 
+const storedInfo = JSON.parse(localStorage.getItem('userInfo'));
+email.value = storedInfo.email;
+fullName.value = storedInfo.fullName;
+message.textContent = storedInfo.message;
+
 const isRequired = (value) => value !== '';
 const isBetween = (length, min, max) => !(length < min || length > max);
 
 const isEmailValid = (email) => {
-  const re = /^(([^<>()\\.,;:\s@"]+(\.[^<>()\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+  const re =
+    /^(([^<>()\\.,;:\s@"]+(\.[^<>()\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
   return re.test(email);
 };
 
@@ -88,9 +94,17 @@ form.addEventListener('submit', (e) => {
   const isMessageValid = checkMessage();
   const isFormValid = isUsernameValid && isEmailValid && isMessageValid;
 
+  const userInfo = {
+    fullName: fullName.value,
+    email: email.value,
+    message: message.value,
+  };
+
   if (isFormValid) {
-    form.submit();
+    window.localStorage.setItem('userInfo', JSON.stringify(userInfo));
+    return form.submit();
   }
+  return false;
 });
 
 const debounce = (fn, delay = 500) => {
@@ -121,5 +135,5 @@ form.addEventListener(
       default:
         break;
     }
-  }),
+  })
 );
