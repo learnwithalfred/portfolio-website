@@ -16,7 +16,7 @@ const projects = [
     featured_image: 'images/projects/1.png',
     live_version: 'https://aurageospatial.com',
     source: 'https://github.com/learnwithalfred',
-    technologies: ['HTML/CSS', 'React', 'JavaScript'],
+    technologies: ['HTML', 'React', 'JavaScript'],
   },
 
   {
@@ -26,7 +26,7 @@ const projects = [
     description: 'A freelance project built for babylon logistics company. ',
     live_version: 'https://www.babylontruckingllc.com',
     source: 'https://github.com/learnwithalfred',
-    technologies: ['HTML/CSS', 'React', 'JavaScript'],
+    technologies: ['HTML', 'React', 'JavaScript'],
   },
 ];
 
@@ -58,15 +58,15 @@ for (let i = 0; i < projects.length; i += 1) {
                 </div>
                 <div class="projects__languages">
                   <ul class="projects__languages--list">
-                    ${projects[i].technologies.map(
-    (element) => `<li class='projects__languages--first'>${element}</li>`,
-  )}
+                    <li class='projects__languages--first'>HTML </li>
+                    <li class='projects__languages--first'>CSS </li>
+                    <li class='projects__languages--first'>JavaScript </li>
+                    <li class='projects__languages--first'>Rails </li>
+                  
                   </ul>
                 </div>
                 <div class="projects__btn">
-                  <button id='${
-  projects[i].id
-}' type="button" class="btn" data-modal-target="#modal">See Projects</button>
+                  <button id='${projects[i].id}' type="button" class="btn" data-modal-target="#modal">See Projects</button>
                 </div>
               </div>
             </div>
@@ -110,20 +110,17 @@ openModalButtons.forEach((button) => {
 
         <div class="projects__languages">
           <ul class="projects__languages--list">
-            ${projects[foundIndex].technologies.map(
-    (element) => `<li class='projects__languages--first'>${element}</li>`,
-  )}
+                               <li class='projects__languages--first'>HTML </li>
+                    <li class='projects__languages--first'>CSS </li>
+                    <li class='projects__languages--first'>JavaScript </li>
+                    <li class='projects__languages--first'>Rails </li>
           </ul>
         </div>
         <div class="btn-container">
-          <a href="${
-  projects[foundIndex].live_version
-}" type="button" class="modal-btn">
-            See Live Link <i class="fa fa-times modal-icon"></i>
+          <a href="${projects[foundIndex].live_version}" type="button" class="modal-btn">
+            See Live Link <img src="/images/Icon.png" alt="Icon" title="Img" class="modal-icon">
           </a>
-          <a href="${
-  projects[foundIndex].source
-}" type="button" class="modal-btn">
+          <a href="${projects[foundIndex].source}" type="button" class="modal-btn">
             See Source Code
             <i class="fa fa-github modal-icon" aria-hidden="true"></i>
           </a>
