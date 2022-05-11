@@ -97,6 +97,11 @@ textarea {
   color: var(--error-color);
 }
 
+#get-in-touch {
+  padding: 20px;
+  margin: auto;
+}
+
 @media (min-width: 768px) {
   .contact {
     display: flex;
