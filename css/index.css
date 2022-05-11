@@ -2,13 +2,14 @@
 @import url('./portfolio.css');
 @import url('./work.css');
 @import url('./contact.css');
+@import url('./modal.css');
 
 :root {
-  --primary: #191765;
-  --white: #fff;
-  --blue: #10f;
-  --purple: #7d73fc;
-  --gray: #2a2b33;
+  --primary-color: #191765;
+  --white-color: #fff;
+  --blue-color: #10f;
+  --purple-color: #7d73fc;
+  --gray-color: #2a2b33;
 }
 
 * {
@@ -19,12 +20,12 @@
   padding: 0;
   text-decoration: none;
   list-style-type: none;
-  color: var(--white);
+  color: var(--white-color);
 }
 
 body {
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: var(--primary-color);
+  color: var(--white-color);
   padding: 1.3rem 1.3rem 0 1.3rem;
   display: flex;
   flex-direction: column;
@@ -44,7 +45,7 @@ body {
 
 .no-scroll-bg {
   overflow-y: hidden;
-  background-color: var(--primary);
+  background-color: var(--primary-color);
   background-image: url(/images/mobile-menu-background.png);
   background-repeat: no-repeat;
 }
@@ -55,7 +56,7 @@ body {
 
 .fa {
   font-style: normal;
-  color: var(--white);
+  color: var(--white-color);
   margin: 0 1rem;
   font-size: 1.5rem;
   height: 1.5rem;
@@ -70,17 +71,17 @@ body {
 .horizontal__line {
   width: 100%;
   margin: 1.5rem 0;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray-color);
 }
 
 .horizontal__line--footer {
   width: 100%;
-  border-bottom: 2px solid var(--gray);
+  border-bottom: 2px solid var(--gray-color);
   margin: 1rem;
 }
 
 .btn {
-  background-color: var(--blue);
+  background-color: var(--blue-color);
   margin: 1.5rem 0;
   font-style: normal;
   font-weight: 500;
@@ -90,7 +91,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--white);
+  color: var(--white-color);
   padding: 0.8rem;
   transition: all 500ms ease-in;
   cursor: pointer;
@@ -103,12 +104,18 @@ label {
 .btn:hover,
 .btn:active {
   box-shadow: 0 8px 1rem rgba(125, 115, 252, 0.48);
-  color: var(--purple);
-  background-color: var(--white);
+  color: var(--purple-color);
+  background-color: var(--white-color);
 }
 
 .btn:disabled {
-  background: var(--gray);
+  background: var(--gray-color);
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* Desktop version - 768px and above */
@@ -128,7 +135,7 @@ label {
   .card__image {
     width: 35rem;
     height: auto;
-    background: var(--white);
+    background: var(--white-color);
     margin: 0 1.5rem;
   }
 
@@ -154,9 +161,14 @@ label {
     display: grid;
     height: auto;
     width: 100%;
-    grid-template-columns: 1fr 0.8fr;
+    grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'third_img projects';
+  }
+
+  .project-image {
+    height: 90%;
+    width: 100%;
   }
 
   .fourth__card {

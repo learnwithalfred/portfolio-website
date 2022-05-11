@@ -34,7 +34,7 @@
 }
 
 .contact__text--header {
-  color: var(--purple);
+  color: var(--purple-color);
   font-weight: 500px;
   font-size: 2rem;
   text-transform: uppercase;
@@ -60,7 +60,7 @@ textarea {
 .contact__email {
   margin: 1.5rem auto;
   font-size: 1.5rem;
-  color: var(--white);
+  color: var(--white-color);
   align-items: center;
 }
 
@@ -69,6 +69,10 @@ textarea {
   margin: 0.7rem auto;
   border: 2px solid black;
   margin-bottom: 2px;
+}
+
+.contact__link--text--left {
+  display: none;
 }
 
 @media (min-width: 768px) {

@@ -1,6 +1,6 @@
 .work {
   margin: 5.5rem 0 0;
-  color: var(--white);
+  color: var(--white-color);
   position: relative;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .work__main-header {
-  color: var(--purple);
+  color: var(--purple-color);
   font-weight: 500;
 }
 
@@ -52,7 +52,7 @@
   grid-area: card__image;
   width: 100%;
   height: min(10rem);
-  background: var(--white);
+  background: var(--white-color);
   margin: 0 auto;
   padding: 1.3rem;
   background-image: url(/images/image_placeholder.png);
@@ -64,7 +64,7 @@
   width: 39.61px;
   height: 582.57px;
   left: -112.04px;
-  background: var(--white);
+  background: var(--white-color);
   filter: blur(1.5rem);
   transform: rotate(-36.38deg);
   background-image: url(/images/Ellipse\ 19@2x.png);
@@ -76,7 +76,7 @@
   width: 70.28px;
   height: 100.6px;
   right: 0;
-  background: var(--white);
+  background: var(--white-color);
   filter: blur(50px);
   transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
   background-image: url(/images/Ellipse\ 20@2x.png);
@@ -88,7 +88,7 @@
   width: 308px;
   height: 155px;
   left: -93px;
-  background: var(--white);
+  background: var(--white-color);
   filter: blur(50px);
   background-image: url(/images/Ellipse\ 21@2x.png);
 }
@@ -99,14 +99,14 @@
   width: 101.29px;
   height: 107.04px;
   right: 0;
-  background: var(--white);
+  background: var(--white-color);
   filter: blur(30px);
   transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
   background-image: url(/images/Ellipse\ 22@2x.png);
 }
 
 .projects__header {
-  color: var(--white);
+  color: var(--white-color);
   font-weight: 500;
   font-size: 2rem;
   margin: 1.5rem 0;
@@ -118,12 +118,19 @@
   padding-left: 0;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .projects__languages--first {
   text-align: center;
-  border-right: 1px solid var(--gray);
-  padding: 1.2rem;
+  border-right: 1px solid var(--white-color);
+  padding: 0.3rem;
+  margin: 0.3rem auto;
+  font-weight: bold;
+}
+
+.projects__languages--first:nth-child(1) {
+  border-left: 1px solid white;
 }
 
 .projects-text {
@@ -131,19 +138,19 @@
   font-style: normal;
   font-size: 1rem;
   line-height: 28px;
-  color: var(--white);
+  color: var(--white-color);
 }
 
 .projects__languages--second {
   text-align: center;
-  border-right: 1px solid var(--gray);
+  border-right: 1px solid var(--gray-color);
   padding: 1.2rem;
   float: left;
 }
 
 .projects__languages--third {
   text-align: center;
-  border-right: 1px solid var(--gray);
+  border-right: 1px solid var(--gray-color);
   padding: 1.2rem;
   float: left;
 }
@@ -156,7 +163,7 @@
 
 @media (min-width: 768px) {
   .work__main-header {
-    color: var(--purple);
+    color: var(--purple-color);
     font-weight: 500;
     font-size: 64px;
     width: 100%;
