@@ -1,7 +1,7 @@
 @import url('./header.css');
 @import url('./portfolio.css');
 @import url('./work.css');
-@import url('./contact.css');
+@import url('./contact-form.css');
 @import url('./modal.css');
 
 :root {
@@ -10,6 +10,9 @@
   --blue-color: #10f;
   --purple-color: #7d73fc;
   --gray-color: #2a2b33;
+  --error-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
 }
 
 * {

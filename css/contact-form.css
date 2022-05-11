@@ -1,3 +1,9 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 0 1rem;
+}
+
 .contact__link--text {
   display: flex;
   align-items: center;
@@ -20,12 +26,6 @@
   list-style-type: none;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  padding: 10rem 0 1rem;
-}
-
 .contact__text {
   display: flex;
   flex-direction: column;
@@ -44,7 +44,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.submit-button-container {
+  display: flex;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
 }
 
 input[type='text'],
@@ -73,6 +82,24 @@ textarea {
 
 .contact__link--text--left {
   display: none;
+}
+
+.form-field input {
+  border-color: var(--error-color);
+}
+
+.form-field.success input {
+  border-color: var(--success-color);
+}
+
+.form-field small,
+#error-message {
+  color: var(--error-color);
+}
+
+#get-in-touch {
+  padding: 20px;
+  margin: auto;
 }
 
 @media (min-width: 768px) {

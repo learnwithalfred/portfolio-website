@@ -60,7 +60,7 @@
     <main class="main">
       <section class="about" id="about">
         <div class="developer developer__info">
-          <h1 class="developer__info--name">Laura Jong</h1>
+          <h1 class="developer__info--name">Alfred Boateng</h1>
           <h2 class="developer__info--title">Software Developer</h2>
         </div>
         <div class="description__text">
@@ -167,34 +167,53 @@
             action="https://formspree.io/f/xeqnpand"
             method="POST"
           >
-            <label aria-hidden="false"> Full Name </label>
-            <input
-              type="text"
-              name="full_name"
-              id="full_name"
-              placeholder="Full Name"
-              required
-              maxlength="30"
-            />
-            <label aria-hidden="false"> Email Address </label>
+            <div class="form-field">
+              <label aria-hidden="false"> Full Name </label>
+              <input
+                type="text"
+                name="fullName"
+                id="name"
+                placeholder="Full Name"
+                required
+                maxlength="30"
+              />
+              <small></small>
+            </div>
 
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-              required
-            />
-            <label aria-hidden="false"> Enter text here </label>
-            <textarea
-              name="message"
-              id="message"
-              rows="6"
-              placeholder="Enter text here"
-              required
-              maxlength="500"
-            ></textarea>
-            <input class="btn" type="submit" value="Get in touch" />
+            <div class="form-field">
+              <label aria-hidden="false"> Email Address </label>
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <label aria-hidden="false"> Enter text here </label>
+              <textarea
+                name="message"
+                id="message"
+                rows="6"
+                placeholder="Enter text here"
+                required
+                maxlength="500"
+              ></textarea>
+              <small></small>
+            </div>
+            <div id="error-message"></div>
+            <div id="get-in-touch">
+              <input
+                class="btn"
+                id="submit-button"
+                type="submit"
+                value="Get in touch"
+              />
+            </div>
           </form>
         </div>
       </section>
@@ -228,6 +247,7 @@
 
     <hr class="bottom-hr" />
 
+    <!-- modal start -->
     <div class="modal" id="modal">
       <div class="modal-header">
         <span class="title">My Projects</span>
@@ -238,8 +258,9 @@
       <div class="modalData"></div>
     </div>
     <div id="overlay"></div>
-
+    <!-- Modal end -->
     <script src="/js/menu.js"></script>
     <script src="/js/projects.js"></script>
+    <script src="/js/contact-form.js"></script>
   </body>
 </html>
