@@ -13,8 +13,7 @@ const isRequired = (value) => value !== '';
 const isBetween = (length, min, max) => !(length < min || length > max);
 
 const isEmailValid = (email) => {
-  const re =
-    /^(([^<>()\\.,;:\s@"]+(\.[^<>()\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+  const re = /^(([^<>()\\.,;:\s@"]+(\.[^<>()\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
   return re.test(email);
 };
 
@@ -135,5 +134,5 @@ form.addEventListener(
       default:
         break;
     }
-  })
+  }),
 );
