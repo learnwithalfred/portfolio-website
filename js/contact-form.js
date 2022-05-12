@@ -13,7 +13,7 @@ const isRequired = (value) => value !== '';
 const isBetween = (length, min, max) => !(length < min || length > max);
 
 const isEmailValid = (email) => {
-  const re = /^(([^<>()\\.,;:\s@"]+(\.[^<>()\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+  const re = /[a-z]+[@]\.[a-z]+\.[a-z]{2,3}/;
   return re.test(email);
 };
 
