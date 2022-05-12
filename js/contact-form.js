@@ -4,18 +4,8 @@ const email = document.querySelector('#email');
 const message = document.querySelector('#message');
 const error = document.querySelector('#error-message');
 
-const storedInfo = JSON.parse(localStorage.getItem('userInfo'));
-email.value = storedInfo.email;
-fullName.value = storedInfo.fullName;
-message.textContent = storedInfo.message;
-
 const isRequired = (value) => value !== '';
 const isBetween = (length, min, max) => !(length < min || length > max);
-
-const isEmailValid = (email) => {
-  const re = /[a-z]+[@]\.[a-z]+\.[a-z]{2,3}/;
-  return re.test(email);
-};
 
 const showError = (input, message) => {
   const formField = input.parentElement;
@@ -56,9 +46,6 @@ const checkEmail = () => {
   if (!isRequired(emailVal)) {
     showError(email, 'Email cannot be blank.');
     error.innerHTML = 'Email cannot be blank';
-  } else if (!isEmailValid(emailVal)) {
-    showError(email, 'Email is not valid.');
-    error.innerHTML = 'Email is not valid';
   } else if (email.value !== email.value.toLowerCase()) {
     showError(email, 'Email must be in lowercase');
     error.innerHTML = 'Email must be in lowercase';
@@ -93,14 +80,7 @@ form.addEventListener('submit', (e) => {
   const isMessageValid = checkMessage();
   const isFormValid = isUsernameValid && isEmailValid && isMessageValid;
 
-  const userInfo = {
-    fullName: fullName.value,
-    email: email.value,
-    message: message.value,
-  };
-
   if (isFormValid) {
-    window.localStorage.setItem('userInfo', JSON.stringify(userInfo));
     return form.submit();
   }
   return false;
