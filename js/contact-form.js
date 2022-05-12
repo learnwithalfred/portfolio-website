@@ -7,11 +7,6 @@ const error = document.querySelector('#error-message');
 const isRequired = (value) => value !== '';
 const isBetween = (length, min, max) => !(length < min || length > max);
 
-const isEmailValid = (email) => {
-  const re = /^(([^<>()\\.,;:\s@"]+(\.[^<>()\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
-  return re.test(email);
-};
-
 const showError = (input, message) => {
   const formField = input.parentElement;
   formField.classList.remove('success');
@@ -51,9 +46,6 @@ const checkEmail = () => {
   if (!isRequired(emailVal)) {
     showError(email, 'Email cannot be blank.');
     error.innerHTML = 'Email cannot be blank';
-  } else if (!isEmailValid(emailVal)) {
-    showError(email, 'Email is not valid.');
-    error.innerHTML = 'Email is not valid';
   } else if (email.value !== email.value.toLowerCase()) {
     showError(email, 'Email must be in lowercase');
     error.innerHTML = 'Email must be in lowercase';
@@ -89,8 +81,9 @@ form.addEventListener('submit', (e) => {
   const isFormValid = isUsernameValid && isEmailValid && isMessageValid;
 
   if (isFormValid) {
-    form.submit();
+    return form.submit();
   }
+  return false;
 });
 
 const debounce = (fn, delay = 500) => {
