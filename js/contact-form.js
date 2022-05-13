@@ -15,6 +15,11 @@ const showError = (input, message) => {
   error.textContent = message;
 };
 
+const isEmailValid = (email) => {
+  const re = /[a-z]+[@]\.[a-z]+\.[a-z]{2,3}/;
+  return re.test(email);
+};
+
 const showSuccess = (input) => {
   const formField = input.parentElement;
   formField.classList.remove('error');
@@ -46,6 +51,9 @@ const checkEmail = () => {
   if (!isRequired(emailVal)) {
     showError(email, 'Email cannot be blank.');
     error.innerHTML = 'Email cannot be blank';
+  } else if (!isEmailValid(emailVal)) {
+    showError(email, 'Email is not valid!!!');
+    error.innerHTML = 'Email is not valid';
   } else if (email.value !== email.value.toLowerCase()) {
     showError(email, 'Email must be in lowercase');
     error.innerHTML = 'Email must be in lowercase';
