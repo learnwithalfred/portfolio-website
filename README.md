@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-![Portfolio](images/portfolio.png)
+![Portfolio](images/alfred-about.png)
 
 ### Description
 
@@ -28,7 +28,7 @@ To get a local copy up and running follow these simple example steps.
 - Change directory into the project folder
 - Install dev dependencies
 - Open project with text editor to view changes
-- Run the code using [live server](https://www.google.com/search?client=safari&rls=en&q=live+server&ie=UTF-8&oe=UTF-8)
+
 
 ## Deployment
 
