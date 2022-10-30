@@ -1,267 +1,771 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alfred Portfolio Website</title>
+    <meta content="Full stack JavaScript Ruby on Rails Software Engineer Seeking job opportunities." name="description">
+    <meta
+      content="Alfred, programming, software developer, react.js, ruby on rails, ruby, full-stack, front-end, back-end"
+      name="keywords">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+
+    <!-- Vendor CSS Files -->
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="./assets/css/style.css" rel="stylesheet">
   </head>
+
   <body>
-    <header>
-      <nav class="nav">
-        <span id="nav__logo"> Alfred </span>
-        <ul class="nav-menu">
-          <li class="nav__item">
-            <a href="./#work" class="nav-link"
-              >Portfolio
-              <span class="arrow-right"><i class="fa fa-angle-right"></i></span
-            ></a>
-          </li>
-          <li class="nav__item">
-            <a href="./#about" class="nav-link"
-              >About
-              <span class="arrow-right"><i class="fa fa-angle-right"></i></span
-            ></a>
-          </li>
-          <li class="nav__item">
-            <a href="./#contact" class="nav-link"
-              >Contact
-              <span class="arrow-right"
-                ><i class="fa fa-angle-right arrow-right"></i></span
-            ></a>
-          </li>
-          <li class="nav__item">
-            <a title="Mail" href="#">
-              <span class="nav__humbugger__icon"
-                ><i class="fa fa-envelope nav-link" aria-hidden="true"></i
-              ></span>
-            </a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"> </span>
-          <span class="bar"></span><span class="bar"></span>
-        </div>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="about" id="about">
-        <div class="developer developer__info">
-          <h1 class="developer__info--name">Alfred Boateng</h1>
-          <h2 class="developer__info--title">Software Developer</h2>
-        </div>
-        <div class="description__text">
-          <p>
-            I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don’t hesitate to contact me.
-          </p>
-          <div>
-            <hr class="horizontal__line" />
-          </div>
-        </div>
-        <div class="about-container">
-          <h3 class="about-header">Language</h3>
-          <ul class="about-list">
-            <li class="about-list-item">Javascript</li>
-            <li class="about-list-item">Ruby</li>
-            <li class="about-list-item">HTML</li>
-            <li class="about-list-item">CSS</li>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo"><img src="./images/alfred.jpg" alt="alfred boateng" class="img-fluid"></a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
+            <li><a class="nav-link scrollto " href="#work">Work</a></li>
+            <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
-        </div>
-        <div class="about-container">
-          <div>
-            <h3 class="about-header">Frameworks</h3>
-            <ul class="about-list">
-              <li class="about-list-item">Bootstrap</li>
-              <li class="about-list-item">Ruby on Rails</li>
-              <li class="about-list-item">RSPec</li>
-              <li class="about-list-item">CapyBara</li>
-              <li class="about-list-item">Selenium</li>
-            </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <div id="hero" class="hero route bg-image" style="background-image: url(images/alfredb.jpg)">
+      <div class="overlay-itro"></div>
+      <div class="hero-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <p class="display-6 color-d">Hello, world!</p>
+            <h1 class="hero-title mb-4">I am Alfred Boateng</h1>
+            <p class="hero-subtitle"><span class="typed"
+                data-typed-items="JavaScript Developer, React.js Developer, Ruby on Rails Developer, Full-stack Developer"></span>
+            </p>
+            <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p>
           </div>
         </div>
-        <div class="about-container">
-          <h3 class="about-header">Skills</h3>
-          <ul class="about-list">
-            <li class="about-list-item">CodeKit</li>
-            <li class="about-list-item">Github</li>
-            <li class="about-list-item">CodePen</li>
-            <li class="about-list-item">GitLab</li>
-            <li class="about-list-item">Terminal</li>
-          </ul>
-        </div>
-        <hr class="horizontal__line" />
-      </section>
-      <div class="contact__link">
-        <ul class="contact__link--text--left">
-          <li>Work<i class="fa fa-arrow-down"></i></li>
-        </ul>
-        <ul class="contact__link--social">
-          <li>
-            <a title="icon" href="#"
-              ><i class="social-icon fa fa-github"> </i>
-            </a>
-          </li>
-          <li>
-            <a title="icon" href="#"
-              ><i class="social-icon fa fa-linkedin"> </i>
-            </a>
-          </li>
-          <li>
-            <a title="icon" href="#"
-              ><i class="social-icon fa fa-twitter"> </i>
-            </a>
-          </li>
-          <li>
-            <a title="icon" href="#"
-              ><i class="social-icon fa fa-facebook"> </i>
-            </a>
-          </li>
-          <li>
-            <a title="icon" href="#"
-              ><i class="social-icon fa fa-instagram"> </i>
-            </a>
-          </li>
-        </ul>
-
-        <ul class="contact__link--text">
-          <li><i class="fa fa-arrow-down"></i>Work</li>
-        </ul>
       </div>
+    </div><!-- End Hero Section -->
 
-      <section class="work" id="work">
-        <div class="work__header">
-          <h1 class="work__main-header">MY RECENT WORK</h1>
-          <div>
-            <hr class="horizontal__line" />
+    <main id="main">
+
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-5">
+                        <div class="about-img">
+                          <img src="./images/alfred.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-7">
+                        <div class="about-info">
+                          <p><span class="title-s">Name: </span> <span><a href="https://www.linkedin.com/in/learnwithalfred/" target="_blank" rel="noopener noreferrer">Alfred Boateng</a> </span></p>
+                        <p><span class="title-s">Education: </span> <span><a href="https://www.microverse.org/" target="_blank" rel="noopener noreferrer"> Microverse Coding BootCamp</a></span></p>
+
+                          <p><span class="title-s">Profile: </span> <span>Full-stack developer</span></p>
+                          <p><span class="title-s">Email: </span> <span><a href="mailto:learnwithalfred@gmail.com" target="_blank" rel="noopener noreferrer">learnwithalfred@gmail.com</a> </span></p>
+                          <p><span class="title-s">Phone: </span> <span><a href="tel:+233203848853" target="_blank" rel="noopener noreferrer">(233) 203848853</a> </span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-mf">
+                      <p class="title-s">Skill</p>
+                      <span>React.js</span> <span class="pull-right">70%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="85"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span>CSS3</span> <span class="pull-right">75%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span>Ruby on Rails</span> <span class="pull-right">75%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="50"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="about-me pt-4 pt-md-0">
+                      <div class="title-box-2">
+                        <h5 class="title-left">
+                          About me
+                        </h5>
+                      </div>
+                      <p class="lead">
+                        Junior plus Full-stack JavaScript, and Ruby developer with hands-on experience in web
+                        development.
+                      </p>
+                      <p class="lead">
+                        One thing that makes me special is that I have learned soft skills needed to work with people
+                        from any background, including effective communication, problem-solving, teamwork, and time
+                        management from Microverse.
+                      </p>
+                      <p class="lead">
+                        Skills include:
+                      <ul>
+                        <li>
+                          Front-end development: ReactJS | NextJS
+                        </li>
+                        <li>
+                          Back-end development: Ruby on Rails | NodeJS | ExpressJS
+                        </li>
+                        <li>
+                          Database: PostgreSQL | MongoDB | MySQL
+                        </li>
+                        <li>
+                          Testing: RSpec | Jest | Cypress
+                        </li>
+                        <li>
+                          Deployment: Heroku | Netlify | Vercel
+                        </li>
+                      </ul>
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card-container"></div>
-      </section>
-      <section class="contact" id="contact">
-        <div class="contact__text">
-          <h2 class="contact__text--header">Contact Us</h2>
-          <p class="description__text">
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it
-          </p>
+      </section><!-- End About Section -->
+
+      <!-- ======= Services Section ======= -->
+      <!-- <section id="services" class="services-mf pt-5 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">
+                  Services
+                </h3>
+                <p class="subtitle-a">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Web Design</h2>
+                  <p class="s-description text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                    provident vitae! Magni
+                    tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Web Development</h2>
+                  <p class="s-description text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                    provident vitae! Magni
+                    tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Photography</h2>
+                  <p class="s-description text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                    provident vitae! Magni
+                    tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Responsive Design</h2>
+                  <p class="s-description text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                    provident vitae! Magni
+                    tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Graphic Design</h2>
+                  <p class="s-description text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                    provident vitae! Magni
+                    tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Marketing Services</h2>
+                  <p class="s-description text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                    provident vitae! Magni
+                    tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <form
-            class="form"
-            action="https://formspree.io/f/xeqnpand"
-            method="POST"
-          >
-            <div class="form-field">
-              <label aria-hidden="false"> Full Name </label>
-              <input
-                type="text"
-                name="fullName"
-                id="name"
-                placeholder="Full Name"
-                required
-                maxlength="30"
-              />
-              <small></small>
-            </div>
+      </section>End Services Section -->
 
-            <div class="form-field">
-              <label aria-hidden="false"> Email Address </label>
-
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email Address"
-                required
-              />
-              <small></small>
+      <!-- ======= Counter Section ======= -->
+      <!-- <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-sm-3 col-lg-3">
+              <div class="counter-box counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="bi bi-check"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1"
+                    class="counter purecounter"></p>
+                  <span class="counter-text">WORKS COMPLETED</span>
+                </div>
+              </div>
             </div>
-
-            <div class="form-field">
-              <label aria-hidden="false"> Enter text here </label>
-              <textarea
-                name="message"
-                id="message"
-                rows="6"
-                placeholder="Enter text here"
-                required
-                maxlength="500"
-              ></textarea>
-              <small></small>
+            <div class="col-sm-3 col-lg-3">
+              <div class="counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
+                    class="counter purecounter"></p>
+                  <span class="counter-text">YEARS OF EXPERIENCE</span>
+                </div>
+              </div>
             </div>
-            <div id="error-message"></div>
-            <div id="get-in-touch">
-              <input
-                class="btn"
-                id="submit-button"
-                type="submit"
-                value="Get in touch"
-              />
+            <div class="col-sm-3 col-lg-3">
+              <div class="counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="bi bi-people"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1"
+                    class="counter purecounter"></p>
+                  <span class="counter-text">TOTAL CLIENTS</span>
+                </div>
+              </div>
             </div>
-          </form>
+            <div class="col-sm-3 col-lg-3">
+              <div class="counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="bi bi-award"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1"
+                    class="counter purecounter"></p>
+                  <span class="counter-text">AWARD WON</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
-    <div>
-      <hr class="horizontal__line--footer" />
-    </div>
+      </div>End Counter Section -->
 
-    <footer class="contact__link">
-      <ul class="contact__link--social footer">
-        <li>
-          <a title="icon" href="#"><i class="fa fa-github"> </i> </a>
-        </li>
-        <li>
-          <a title="icon" href="#"><i class="fa fa-linkedin"> </i> </a>
-        </li>
-        <li>
-          <a title="icon" href="#"><i class="fa fa-twitter"> </i> </a>
-        </li>
-        <li>
-          <a title="icon" href="#"><i class="fa fa-facebook"> </i> </a>
-        </li>
-        <li>
-          <a title="icon" href="#"><i class="fa fa-instagram"> </i> </a>
-        </li>
-      </ul>
-      <a href="mailto:emailhere@email.com" class="contact__email"
-        >emailhere@email.com</a
-      >
-    </footer>
+      <!-- ======= Portfolio Section ======= -->
+      <section id="work" class="portfolio-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">
+                  Portfolio
+                </h3>
+                
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="work-box">
+                <a href="https://www.gotlisted.io/" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <div class="work-img">
+                    <img src="./images/listed.png" alt="listed MVP" class="img-fluid">
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">https://www.gotlisted.io</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Design</span> / <span class="w-date">Sep 2022</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a target="_blank" href="https://www.gotlisted.io/"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="work-box">
+                <a href="https://kraado.co/" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <div class="work-img">
+                    <img src="./images/kraado.png" alt="" class="img-fluid">
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">https://kraado.co</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Design</span> / <span class="w-date">Jan 2021</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://kraado.co/"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="work-box">
+                <a href="https://nana-ama.herokuapp.com/" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <div class="work-img">
+                    <img src="https://github.com/learnwithalfred/furry-invention/blob/main/app/assets/images/nana_ama.png?raw=true" alt="" class="img-fluid">
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Stores Data Collection App.</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Design</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://nana-ama.herokuapp.com/"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="work-box">
+                <a href="https://space-travel-hub-rockets.netlify.app/" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <div class="work-img">
+                    <img src="./images/space.png" alt="space traveler hub" class="img-fluid">
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Space Travel Hub Rockets</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Design</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://space-travel-hub-rockets.netlify.app/"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="work-box">
+                <a href="https://learnwithalfred.github.io/alfred-code-college/" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <div class="work-img">
+                    <img src="./images/code.png" alt="code school" class="img-fluid">
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Code School</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Design</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://learnwithalfred.github.io/alfred-code-college/"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="work-box">
+                <a href="https://giuseppetg.github.io/TVmaze/dist/" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <div class="work-img">
+                    <img src="./images/tv.png" alt="tv shows" class="img-fluid">
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">TV SHOWS</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Design</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://giuseppetg.github.io/TVmaze/dist/"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <hr class="bottom-hr" />
+          </div>
+        </div>
+      </section><!-- End Portfolio Section -->
 
-    <!-- modal start -->
-    <div class="modal" id="modal">
-      <div class="modal-header">
-        <span class="title">My Projects</span>
-        <button type="button" data-close-button class="close-button">
-          &times;
-        </button>
-      </div>
-      <div class="modalData"></div>
-    </div>
-    <div id="overlay"></div>
-    <!-- Modal end -->
-    <script src="/js/menu.js"></script>
-    <script src="/js/projects.js"></script>
-    <script src="/js/contact-form.js"></script>
-    <script src="/js/storage.js"></script>
+      <!-- ======= Testimonials Section ======= -->
+      <div class="testimonials paralax-mf bg-image" style="background-image: url(images/bg-1.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+
+              <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img src="https://avatars.githubusercontent.com/u/5249414?v=4" alt=""
+                          class="rounded-circle b-shadow-a" width="200px" height="200px">
+                        <span class="author">Bright Ahiadeke </span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          Having been privileged to collaborate with Alfred at Microverse, I can say he displays a high
+                          level of creativity, wit, and problem-solving. He is very technical and highly motivated. I
+                          wouldn’t hesitate to collaborate with him in the future.
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img src="https://avatars.githubusercontent.com/u/97407840?v=4" alt=""
+                          class="rounded-circle b-shadow-a" width="200px" height="200px">
+                        <span class="author">Mike Martínez</span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          Alfred is one of the teammates you always want near you while working on any project. He
+                          always has something to teach whether it is a technical or professional skill, working with
+                          Alfred means the thrive of a project.
+                          Proactiveness and effective remote communication are some things you will have while having
+                          Alfred as a team member.
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img src="https://avatars.githubusercontent.com/u/100236377?v=4" alt=""
+                          class="rounded-circle b-shadow-a" width="200px" height="200px">
+                        <span class="author">TOFANA SILVIA</span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          He has good experience in the workings of how to handle works regarding servers, databases,
+                          and also system engineering. He also has good team management abilities and is a really
+                          dedicated worker.
+                          So I would really like to recommend him for the post of full stack developer of your company.
+                          I can assure you that, he would be a great option for helping your company in its future
+                          growth and success. Thank you for taking the time to read this recommendation from your busy
+                          schedule.
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img src="https://avatars.githubusercontent.com/u/86022690?v=4" alt=""
+                          class="rounded-circle b-shadow-a" width="200px" height="200px">
+                        <span class="author">Giuseppe Tomasini </span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          I had the privilege of working with Alfred as a coding partner on several occasions. Alfred is
+                          proactive, result-oriented, responsible, and always ready to put all his energy and time to
+                          get the job done and get it done well. His analytical skills and fast learning makes him pick
+                          up new concepts and transfer the knowledge to his own projects fast. He is professional,
+                          hardworking, and a team player with great communication skills. Alfred is a valuable asset to
+                          any team and I recommend him without reservation.
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
+          
+        </div> -->
+            </div>
+          </div>
+        </div>
+      </div><!-- End Testimonials Section -->
+
+      <!-- ======= Blog Section ======= -->
+      <section id="blog" class="blog-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">
+                  Blog
+                </h3>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="https://medium.com/@learnwithalfred/react-with-redux-toolkit-and-createasyncthunk-complementary-guide-c3a3bb2a1113"><img src="https://miro.medium.com/max/1400/0*-V3I0GqsEqk49w3z" alt="" class="img-fluid"></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">Programming</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title"><a href="https://medium.com/@learnwithalfred/react-with-redux-toolkit-and-createasyncthunk-complementary-guide-c3a3bb2a1113">React with Redux toolkit and CreateAsyncThunk Complementary Guide</a></h3>
+                  <p class="card-description">
+                   This tutorial we are going to build a application from scratch using redux toolkit. We will fetch API data and display on the screen... 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="https://medium.com/@learnwithalfred/before-you-enroll-in-an-online-course-there-is-something-you-should-know-a2b0849b5ce9"><img src="https://miro.medium.com/max/1100/0*NMOv6NY0uJI0VKM6" alt="" class="img-fluid"></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">Web Design</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title"><a href="https://medium.com/@learnwithalfred/before-you-enroll-in-an-online-course-there-is-something-you-should-know-a2b0849b5ce9">Before you enroll in an online course, there is something you should know</a></h3>
+                  <p class="card-description">
+                   Not all courses are good, and not all courses are bad...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="https://medium.com/@learnwithalfred/four-free-well-structured-resources-to-learn-how-to-code-c0d5f3d29858"><img src="https://miro.medium.com/max/1100/0*k6Eh1qMJGl4pTIRJ" alt="" class="img-fluid"></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">Web Design</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title"><a href="https://medium.com/@learnwithalfred/four-free-well-structured-resources-to-learn-how-to-code-c0d5f3d29858">Four Free Well Structured Resources to learn to code</a></h3>
+                  <p class="card-description">
+                    The internet is full of resources. Coding materials are no different. But the problem is how to find well-structured contents...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End Blog Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
+        style="background-image: url(images/bg-1.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="contact-mf">
+                <div id="contact" class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="title-box-2">
+                        <h5 class="title-left">
+                          Send A Message
+                        </h5>
+                      </div>
+                      <div>
+                        <form action="https://formspree.io/f/xeqnpand" method="post">
+                          <div class="row">
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                  required>
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email"
+                                  placeholder="Your Email" required>
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input type="tel" class="form-control" name="phone" id="phone"
+                                  placeholder="Phone Number" required>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                  required></textarea>
+                              </div>
+                            </div>
+                            <div class="col-md-12 text-center my-3">
+                            </div>
+                            <div class="col-md-12 text-center">
+                              <button type="submit" class="button button-a button-big button-rouded">Send
+                                Message</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="title-box-2 pt-4 pt-md-0">
+                        <h5 class="title-left">
+                          Get in Touch
+                        </h5>
+                      </div>
+                      <div class="more-info">
+                        <h1 class="hero-title">
+                          Got A Project Or A Partnership In Mind?
+                        </h1>
+                        <ul class="list-ico">
+                          <li><span class="bi bi-geo-alt"></span> Kumasi, Ghana</li>
+                          <li><span class="bi bi-phone"></span><a href="tel:+233203848853">(233) 203848853</a> </li>
+                          <li><span class="bi bi-envelope"></span>  <a href="mailto:learnwithalfred@gmail.com">learnwithalfred@gmail.com</a></li>
+                        </ul>
+                      </div>
+                      <div class="socials">
+                        <ul>
+                          <li><a href="https://github.com/learnwithalfred"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                          <li><a href="https://twitter.com/kb_alfred"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                          <li><a href="https://www.linkedin.com/in/learnwithalfred/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/vendor/typed.js/typed.min.js"></script>
+    <script src="./assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="./assets/js/main.js"></script>
+
   </body>
+
 </html>

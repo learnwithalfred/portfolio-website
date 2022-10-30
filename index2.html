@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfred Portfolio Website</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <span id="nav__logo"> Alfred </span>
+        <ul class="nav-menu">
+          <li class="nav__item">
+            <a href="./#work" class="nav-link"
+              >Portfolio
+              <span class="arrow-right"><i class="fa fa-angle-right"></i></span
+            ></a>
+          </li>
+          <li class="nav__item">
+            <a href="./#about" class="nav-link"
+              >About
+              <span class="arrow-right"><i class="fa fa-angle-right"></i></span
+            ></a>
+          </li>
+          <li class="nav__item">
+            <a href="./#contact" class="nav-link"
+              >Contact
+              <span class="arrow-right"
+                ><i class="fa fa-angle-right arrow-right"></i></span
+            ></a>
+          </li>
+          <li class="nav__item">
+            <a title="Mail" href="#">
+              <span class="nav__humbugger__icon"
+                ><i class="fa fa-envelope nav-link" aria-hidden="true"></i
+              ></span>
+            </a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"> </span>
+          <span class="bar"></span><span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="about" id="about">
+        <div class="developer developer__info">
+          <h1 class="developer__info--name">Alfred Boateng</h1>
+          <h2 class="developer__info--title">Software Developer</h2>
+        </div>
+        <div class="description__text">
+          <p>
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hesitate to contact me.
+          </p>
+          <div>
+            <hr class="horizontal__line" />
+          </div>
+        </div>
+        <div class="about-container">
+          <h3 class="about-header">Language</h3>
+          <ul class="about-list">
+            <li class="about-list-item">Javascript</li>
+            <li class="about-list-item">Ruby</li>
+            <li class="about-list-item">HTML</li>
+            <li class="about-list-item">CSS</li>
+          </ul>
+        </div>
+        <div class="about-container">
+          <div>
+            <h3 class="about-header">Frameworks</h3>
+            <ul class="about-list">
+              <li class="about-list-item">Bootstrap</li>
+              <li class="about-list-item">Ruby on Rails</li>
+              <li class="about-list-item">RSPec</li>
+              <li class="about-list-item">CapyBara</li>
+              <li class="about-list-item">Selenium</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about-container">
+          <h3 class="about-header">Skills</h3>
+          <ul class="about-list">
+            <li class="about-list-item">CodeKit</li>
+            <li class="about-list-item">Github</li>
+            <li class="about-list-item">CodePen</li>
+            <li class="about-list-item">GitLab</li>
+            <li class="about-list-item">Terminal</li>
+          </ul>
+        </div>
+        <hr class="horizontal__line" />
+      </section>
+      <div class="contact__link">
+        <ul class="contact__link--text--left">
+          <li>Work<i class="fa fa-arrow-down"></i></li>
+        </ul>
+        <ul class="contact__link--social">
+          <li>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-github"> </i>
+            </a>
+          </li>
+          <li>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-linkedin"> </i>
+            </a>
+          </li>
+          <li>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-twitter"> </i>
+            </a>
+          </li>
+          <li>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-facebook"> </i>
+            </a>
+          </li>
+          <li>
+            <a title="icon" href="#"
+              ><i class="social-icon fa fa-instagram"> </i>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="contact__link--text">
+          <li><i class="fa fa-arrow-down"></i>Work</li>
+        </ul>
+      </div>
+
+      <section class="work" id="work">
+        <div class="work__header">
+          <h1 class="work__main-header">MY RECENT WORK</h1>
+          <div>
+            <hr class="horizontal__line" />
+          </div>
+        </div>
+        <div class="card-container"></div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact__text">
+          <h2 class="contact__text--header">Contact Us</h2>
+          <p class="description__text">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+        </div>
+        <div>
+          <form
+            class="form"
+            action="https://formspree.io/f/xeqnpand"
+            method="POST"
+          >
+            <div class="form-field">
+              <label aria-hidden="false"> Full Name </label>
+              <input
+                type="text"
+                name="fullName"
+                id="name"
+                placeholder="Full Name"
+                required
+                maxlength="30"
+              />
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <label aria-hidden="false"> Email Address </label>
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <label aria-hidden="false"> Enter text here </label>
+              <textarea
+                name="message"
+                id="message"
+                rows="6"
+                placeholder="Enter text here"
+                required
+                maxlength="500"
+              ></textarea>
+              <small></small>
+            </div>
+            <div id="error-message"></div>
+            <div id="get-in-touch">
+              <input
+                class="btn"
+                id="submit-button"
+                type="submit"
+                value="Get in touch"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div>
+      <hr class="horizontal__line--footer" />
+    </div>
+
+    <footer class="contact__link">
+      <ul class="contact__link--social footer">
+        <li>
+          <a title="icon" href="#"><i class="fa fa-github"> </i> </a>
+        </li>
+        <li>
+          <a title="icon" href="#"><i class="fa fa-linkedin"> </i> </a>
+        </li>
+        <li>
+          <a title="icon" href="#"><i class="fa fa-twitter"> </i> </a>
+        </li>
+        <li>
+          <a title="icon" href="#"><i class="fa fa-facebook"> </i> </a>
+        </li>
+        <li>
+          <a title="icon" href="#"><i class="fa fa-instagram"> </i> </a>
+        </li>
+      </ul>
+      <a href="mailto:emailhere@email.com" class="contact__email"
+        >emailhere@email.com</a
+      >
+    </footer>
+
+    <hr class="bottom-hr" />
+
+    <!-- modal start -->
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <span class="title">My Projects</span>
+        <button type="button" data-close-button class="close-button">
+          &times;
+        </button>
+      </div>
+      <div class="modalData"></div>
+    </div>
+    <div id="overlay"></div>
+    <!-- Modal end -->
+    <script src="/js/menu.js"></script>
+    <script src="/js/projects.js"></script>
+    <script src="/js/contact-form.js"></script>
+    <script src="/js/storage.js"></script>
+  </body>
+</html>
