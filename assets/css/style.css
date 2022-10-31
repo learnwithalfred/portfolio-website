@@ -1481,3 +1481,8 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+ul{
+  margin: 0;
+  padding: 0.2rem;
+}
